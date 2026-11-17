@@ -1,0 +1,2210 @@
+[
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "LTH": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "AM": true,
+            "Hybrid3": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "AP": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": true,
+            "Hybrid2": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "AP": false,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "AH": true,
+            "Hybrid3": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MR": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "AH": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "CSC": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "AS": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "Hybrid1": true,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "LTH": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "AM": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "AH": true,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "Hybrid2": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "AD": false,
+            "MR": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MRPP": false,
+            "HPSZ": true,
+            "OMV": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "AP": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "Hybrid3": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "Hybrid3": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "CSC": false,
+            "Hybrid2": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "AS": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AD": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MRPP": false,
+            "HSP": true,
+            "MS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": true,
+            "AD": false,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AM": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": true,
+            "MRPF": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "Hybrid3": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "AS": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "MRPF": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "AD": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": false,
+            "MR": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "AP": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AM": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "AD": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "MR": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "CSC": false,
+            "HP": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "AS": true,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "MRPF": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": false,
+            "CSC": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": false,
+            "AD": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "Hybrid3": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "AD": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HSP": false,
+            "OMV": true,
+            "MS": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "Hybrid1": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "AMP": false,
+            "MS": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "CSC": false,
+            "LTH": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": false,
+            "AH": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "MRPF": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": true,
+            "HP": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": false,
+            "LTH": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "MRPF": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "AH": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "CSC": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "AD": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "HP": false,
+            "AS": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "MRPF": false,
+            "CSC": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": true,
+            "AP": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "MR": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "MR": true,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "Hybrid1": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": true,
+            "AM": false,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "Hybrid3": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "MRPF": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "Hybrid2": false,
+            "Hybrid3": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "AD": false,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "Hybrid3": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": true,
+            "HP": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": true,
+            "LTH": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "Hybrid2": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid2": false,
+            "HP": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "OMV": false,
+            "TNC": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AH": true,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": true,
+            "MR": false,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": false,
+            "AD": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "OMV": true,
+            "MS": false,
+            "TNC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "AP": false,
+            "CSC": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid3": true,
+            "AM": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "AH": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MRPP": false,
+            "AMP": false,
+            "OMV": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "MRPF": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": false,
+            "AM": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "OMV": false,
+            "TNC": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid1": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid3": true,
+            "MRPF": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "Hybrid1": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "AS": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": false,
+            "AP": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "MRPF": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MR": true,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "Hybrid1": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "Hybrid2": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": true,
+            "LTH": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid1": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid2": true,
+            "AD": false,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "AS": true,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "Hybrid3": true,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "Hybrid2": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": false,
+            "Hybrid3": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": true,
+            "AD": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "LTH": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": true,
+            "AP": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "Hybrid2": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "MRPF": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": true,
+            "CSC": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "CSC": false,
+            "AD": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid1": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "AD": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "Hybrid3": true,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "Hybrid3": true,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AS": false,
+            "MR": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": true,
+            "CSC": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": true,
+            "LTH": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "LTH": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "AS": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "AH": false,
+            "MR": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "TNC": false,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AM": true,
+            "HP": false,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "HP": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "MR": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": false,
+            "AD": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "MRPF": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "MR": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "AD": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "MRPF": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "MRPF": false,
+            "AD": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AM": false,
+            "AD": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "AH": false,
+            "AP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "Hybrid3": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "OMV": false,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid3": true,
+            "AD": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MRPP": false,
+            "HPSZ": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AM": true,
+            "LTH": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "LTH": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "AMP": false,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": true,
+            "MR": false,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "CSC": false,
+            "AM": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "MRPF": false,
+            "AP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "MR": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "CSC": false,
+            "LTH": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid2": false,
+            "HP": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "AP": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": true,
+            "AH": false,
+            "Hybrid1": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "MRPF": false,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": false,
+            "CSC": false,
+            "AP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": true,
+            "AH": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "AM": true,
+            "Hybrid1": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "TNC": false,
+            "MRPP": false,
+            "MS": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "Hybrid1": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "Hybrid1": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "AH": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "HP": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "MR": true,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "CSC": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "MR": true,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AH": false,
+            "LTH": false,
+            "AD": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "LTH": false,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MRPF": false,
+            "Hybrid2": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "AD": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "AM": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "MR": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "HP": true,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "AP": false,
+            "Hybrid2": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "OMV": true,
+            "HSP": false,
+            "MRPP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": true,
+            "MRPF": false,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": false,
+            "AH": false,
+            "LTH": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "AS": true,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid2": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "CSC": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "CSC": true,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "AM": true,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "CSC": false,
+            "AM": true,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": true,
+            "MRPF": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": true,
+            "CSC": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": true,
+            "CSC": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": true,
+            "AS": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HSP": false,
+            "HPSZ": true,
+            "MRPP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "Hybrid1": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "Hybrid1": false,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "LTH": false,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "AM": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "Hybrid3": true,
+            "AM": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": true,
+            "AS": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "AS": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "Hybrid1": false,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "HP": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": true,
+            "AD": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AH": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": true,
+            "Hybrid1": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "AMP": false,
+            "HPSZ": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": true,
+            "MR": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "Hybrid2": true,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": false,
+            "Hybrid3": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "MRPF": false,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "MRPF": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MR": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": false,
+            "MR": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "LTH": false,
+            "Hybrid2": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "TNC": false,
+            "MRPP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "AS": true,
+            "Hybrid1": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "AP": true,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "Hybrid1": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": false,
+            "Hybrid2": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "AH": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "LTH": true,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": true,
+            "AS": false,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "MS": false,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": true,
+            "Hybrid1": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "HP": true,
+            "Hybrid1": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "Hybrid1": false,
+            "MR": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AM": true,
+            "AH": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "AD": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "AH": false,
+            "MR": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "LTH": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid2": false,
+            "CSC": true,
+            "Hybrid1": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": true,
+            "LTH": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid3": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "Hybrid1": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "AM": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": true,
+            "MR": false,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": true,
+            "Hybrid1": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "AD": true,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": true,
+            "Hybrid2": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "AS": false,
+            "CSC": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "CSC": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "OMV": true,
+            "HSP": false,
+            "MS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "MR": true,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "CSC": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "CSC": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": true,
+            "CSC": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": true,
+            "LTH": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": true,
+            "LTH": false,
+            "HP": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AM": true,
+            "MRPF": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MS": true,
+            "AMP": false,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": true,
+            "AS": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "LTH": true,
+            "AD": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "HP": true,
+            "Hybrid2": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "MRPF": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HSP": false,
+            "AMP": false,
+            "HPSZ": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "HP": true,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "Hybrid1": true,
+            "AS": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MRPF": false,
+            "LTH": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "Hybrid1": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "HP": true,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": false,
+            "Hybrid1": false,
+            "AH": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "AS": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AP": false,
+            "AD": false,
+            "AM": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "HP": true,
+            "MR": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": true,
+            "AH": false,
+            "MRPF": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AS": false,
+            "AH": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HPSZ": true,
+            "MRPP": false,
+            "AMP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AH": false,
+            "Hybrid2": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MRPF": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "AD": false,
+            "AM": true,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AM": false,
+            "HP": true,
+            "LTH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid3": true,
+            "LTH": false,
+            "AD": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "Hybrid3": true,
+            "Hybrid2": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "LTH": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MR": true,
+            "AD": false,
+            "AP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid3": false,
+            "AS": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": false,
+            "MRPF": false,
+            "Hybrid1": true
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "MRPF": false,
+            "Hybrid3": true,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": true,
+            "AS": false,
+            "CSC": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "Hybrid1": false,
+            "AP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid1": false,
+            "Hybrid2": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "Hybrid2": false,
+            "LTH": false,
+            "Hybrid3": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "CSC": false,
+            "AP": false,
+            "LTH": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MS": false,
+            "TNC": true,
+            "MRPP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AP": true,
+            "LTH": false,
+            "AH": false
+        }
+    },
+    {
+        "rarity": 1,
+        "selection": {
+            "Hybrid1": false,
+            "CSC": false,
+            "HP": true
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "MRPP": false,
+            "TNC": true,
+            "HSP": false
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "LTH": true,
+            "AH": false,
+            "MR": false
+        }
+    },
+    {
+        "rarity": 2,
+        "selection": {
+            "HSP": false,
+            "MRPP": false,
+            "AMP": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "MR": false,
+            "AP": false,
+            "Hybrid2": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AD": false,
+            "MRPF": false,
+            "LTH": true
+        }
+    },
+    {
+        "rarity": 0,
+        "selection": {
+            "AS": false,
+            "AH": false,
+            "Hybrid3": true
+        }
+    }
+]
