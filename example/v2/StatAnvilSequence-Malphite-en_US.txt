@@ -1,0 +1,599 @@
+(1) (Stats on Stats!) (Silver) Lethality Shard, Attack Speed Shard, Health Shard (√)
+(2) (Stats on Stats!) (Prismatic) Armor Penetration Shard, Health and Size Shard (√), Omnivamp Shard
+(3) (Stats on Stats!) (Prismatic) Tenacity Shard, Omnivamp Shard (√), Heal & Shield Power Shard
+(4) (Stat Bonus) (Prismatic) Health and Size Shard (√), Heal & Shield Power Shard, Magic Penetration Shard
+(5) (Stat Bonus) (Silver) Critical Strike Shard (√), Attack Speed Shard, Might Shard
+(6) (Stat Bonus) (Silver) Ability Haste Shard (√), Attack Damage Shard, Magic Resist Shard
+(7) (Stat Bonus) (Gold) Ability Haste Shard, Ability Power Shard, Unbreakable Shard (√)
+(8) (Stat Bonus) (Silver) Attack Damage Shard, Armor Shard (√), Magic Resist Shard
+(9) (Stat Bonus) (Gold) Health Shard, Critical Strike Shard (√), Attack Damage Shard
+(10) (Stat Bonus) (Gold) Lethality Shard (√), Magic Penetration Shard, Ability Power Shard
+(11) (Stat Bonus) (Silver) Ability Haste Shard, Health Shard (√), Attack Damage Shard
+(12) (Stat Bonus) (Gold) Unbreakable Shard, Critical Strike Shard (√), Swiftness Shard
+(13) (Stat Bonus) (Gold) Critical Strike Shard (√), Ability Haste Shard, Might Shard
+(14) (Stat Bonus) (Gold) Swiftness Shard, Attack Speed Shard, Armor Shard (√)
+(15) (Stat Bonus) (Silver) Lethality Shard (√), Attack Speed Shard, Attack Damage Shard
+(16) (Stat Bonus) (Silver) Lethality Shard, Armor Shard (√), Magic Penetration Shard
+(17) (Stat Bonus) (Silver) Ability Power Shard, Might Shard, Critical Strike Shard (√)
+(18) (Stat Bonus) (Gold) Ability Power Shard, Armor Shard (√), Unbreakable Shard
+(19) (Stat Bonus) (Silver) Attack Speed Shard, Armor Shard (√), Ability Power Shard
+(20) (Stat Bonus) (Gold) Attack Speed Shard, Armor Shard (√), Magic Resist Shard
+(21) (Stat Bonus) (Gold) Unbreakable Shard (√), Attack Damage Shard, Swiftness Shard
+(22) (Stat Bonus) (Silver) Unbreakable Shard (√), Health Shard, Critical Strike Shard
+(23) (Stat Bonus) (Gold) Armor Shard (√), Health Shard, Critical Strike Shard
+(24) (Stat Bonus) (Gold) Swiftness Shard (√), Ability Haste Shard, Attack Speed Shard
+(25) (Stat Bonus) (Prismatic) Omnivamp Shard, Health and Size Shard (√), Move Speed Shard
+(26) (Stat Bonus) (Prismatic) Tenacity Shard, Armor Penetration Shard (√), Heal & Shield Power Shard
+(27) (Stat Bonus) (Silver) Health Shard, Lethality Shard (√), Might Shard
+(28) (Stat Bonus) (Silver) Attack Damage Shard, Health Shard (√), Magic Resist Shard
+(29) (Stat Bonus) (Silver) Lethality Shard (√), Might Shard, Ability Power Shard
+(30) (Stat Bonus) (Silver) Critical Strike Shard (√), Ability Power Shard, Magic Penetration Shard
+(31) (Stat Bonus) (Silver) Ability Haste Shard, Health Shard, Lethality Shard (√)
+(32) (Stat Bonus) (Gold) Health Shard, Unbreakable Shard, Armor Shard (√)
+(33) (Stat Bonus) (Gold) Critical Strike Shard, Unbreakable Shard (√), Ability Power Shard
+(34) (Stat Bonus) (Gold) Magic Penetration Shard, Unbreakable Shard (√), Magic Resist Shard
+(35) (Stat Bonus) (Gold) Critical Strike Shard, Ability Power Shard, Attack Damage Shard (√)
+(36) (Stat Bonus) (Silver) Magic Resist Shard, Attack Speed Shard (√), Might Shard
+(37) (Stat Bonus) (Prismatic) Tenacity Shard, Move Speed Shard, Health and Size Shard (√)
+(38) (Stat Bonus) (Gold) Might Shard, Unbreakable Shard, Armor Shard (√)
+(39) (Stat Bonus) (Gold) Health Shard, Armor Shard (√), Attack Speed Shard
+(40) (Stat Bonus) (Gold) Magic Penetration Shard, Ability Haste Shard (√), Ability Power Shard
+(41) (Stat Bonus) (Gold) Magic Penetration Shard, Critical Strike Shard, Swiftness Shard (√)
+(42) (Stat Bonus) (Silver) Health Shard (√), Attack Speed Shard, Magic Resist Shard
+(43) (Stat Bonus) (Silver) Magic Penetration Shard, Magic Resist Shard (√), Ability Haste Shard
+(44) (Stat Bonus) (Silver) Lethality Shard, Attack Damage Shard, Magic Resist Shard (√)
+(45) (Stat Bonus) (Gold) Armor Shard (√), Ability Power Shard, Ability Haste Shard
+(46) (Stat Bonus) (Silver) Attack Damage Shard, Attack Speed Shard, Health Shard (√)
+(47) (Stat Bonus) (Silver) Lethality Shard, Might Shard (√), Magic Penetration Shard
+(48) (Stat Bonus) (Silver) Unbreakable Shard (√), Swiftness Shard, Magic Resist Shard
+(49) (Stat Bonus) (Gold) Critical Strike Shard, Might Shard (√), Ability Haste Shard
+(50) (Stat Bonus) (Silver) Unbreakable Shard (√), Swiftness Shard, Attack Damage Shard
+(51) (Stat Bonus) (Prismatic) Magic Penetration Shard, Move Speed Shard, Heal & Shield Power Shard (√)
+(52) (Stat Bonus) (Silver) Ability Power Shard, Might Shard, Armor Shard (√)
+(53) (Stat Bonus) (Silver) Armor Shard (√), Magic Penetration Shard, Might Shard
+(54) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard (√), Attack Damage Shard
+(55) (Stat Bonus) (Silver) Swiftness Shard, Magic Resist Shard, Unbreakable Shard (√)
+(56) (Stat Bonus) (Gold) Armor Shard (√), Critical Strike Shard, Attack Speed Shard
+(57) (Stat Bonus) (Silver) Swiftness Shard, Unbreakable Shard (√), Lethality Shard
+(58) (Stat Bonus) (Silver) Might Shard, Ability Haste Shard, Swiftness Shard (√)
+(59) (Stat Bonus) (Silver) Armor Shard (√), Ability Haste Shard, Health Shard
+(60) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard, Health Shard (√)
+(61) (Stat Bonus) (Prismatic) Health and Size Shard (√), Magic Penetration Shard, Move Speed Shard
+(62) (Stat Bonus) (Gold) Might Shard (√), Ability Power Shard, Lethality Shard
+(63) (Stat Bonus) (Silver) Lethality Shard, Armor Shard (√), Magic Penetration Shard
+(64) (Stat Bonus) (Prismatic) Tenacity Shard, Move Speed Shard, Armor Penetration Shard (√)
+(65) (Stat Bonus) (Silver) Unbreakable Shard, Attack Damage Shard, Health Shard (√)
+(66) (Stat Bonus) (Gold) Lethality Shard, Ability Power Shard, Swiftness Shard (√)
+(67) (Stat Bonus) (Gold) Critical Strike Shard, Attack Speed Shard (√), Ability Haste Shard
+(68) (Stat Bonus) (Silver) Critical Strike Shard, Attack Speed Shard (√), Ability Power Shard
+(69) (Stat Bonus) (Silver) Health Shard, Swiftness Shard (√), Lethality Shard
+(70) (Stat Bonus) (Silver) Ability Haste Shard, Armor Shard (√), Magic Penetration Shard
+(71) (Stat Bonus) (Silver) Ability Power Shard, Critical Strike Shard (√), Ability Haste Shard
+(72) (Stat Bonus) (Silver) Ability Haste Shard, Magic Resist Shard (√), Attack Damage Shard
+(73) (Stat Bonus) (Silver) Armor Shard, Health Shard (√), Magic Resist Shard
+(74) (Stat Bonus) (Silver) Magic Resist Shard, Ability Power Shard, Attack Speed Shard (√)
+(75) (Stat Bonus) (Gold) Health Shard, Attack Speed Shard (√), Ability Haste Shard
+(76) (Stat Bonus) (Silver) Magic Penetration Shard, Critical Strike Shard (√), Lethality Shard
+(77) (Stat Bonus) (Gold) Health Shard, Lethality Shard, Swiftness Shard (√)
+(78) (Stat Bonus) (Prismatic) Health and Size Shard (√), Tenacity Shard, Magic Penetration Shard
+(79) (Stat Bonus) (Silver) Magic Penetration Shard, Might Shard, Swiftness Shard (√)
+(80) (Stat Bonus) (Silver) Critical Strike Shard, Health Shard, Swiftness Shard (√)
+(81) (Stat Bonus) (Gold) Swiftness Shard (√), Magic Resist Shard, Magic Penetration Shard
+(82) (Stat Bonus) (Silver) Critical Strike Shard, Attack Speed Shard, Armor Shard (√)
+(83) (Stat Bonus) (Gold) Armor Shard (√), Ability Power Shard, Lethality Shard
+(84) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard, Magic Resist Shard (√)
+(85) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard, Armor Shard (√)
+(86) (Stat Bonus) (Silver) Attack Damage Shard, Unbreakable Shard (√), Armor Shard
+(87) (Stat Bonus) (Silver) Ability Haste Shard, Magic Resist Shard (√), Magic Penetration Shard
+(88) (Stat Bonus) (Gold) Ability Power Shard, Lethality Shard (√), Magic Penetration Shard
+(89) (Stat Bonus) (Silver) Health Shard (√), Critical Strike Shard, Attack Damage Shard
+(90) (Stat Bonus) (Prismatic) Magic Penetration Shard, Tenacity Shard, Omnivamp Shard (√)
+(91) (Stat Bonus) (Silver) Magic Resist Shard, Unbreakable Shard, Armor Shard (√)
+(92) (Stat Bonus) (Silver) Unbreakable Shard, Might Shard, Armor Shard (√)
+(93) (Stat Bonus) (Silver) Health Shard, Unbreakable Shard (√), Ability Power Shard
+(94) (Stat Bonus) (Gold) Attack Damage Shard, Armor Shard (√), Unbreakable Shard
+(95) (Stat Bonus) (Silver) Unbreakable Shard (√), Might Shard, Lethality Shard
+(96) (Stat Bonus) (Gold) Swiftness Shard, Might Shard, Health Shard (√)
+(97) (Stat Bonus) (Gold) Ability Power Shard, Critical Strike Shard (√), Might Shard
+(98) (Stat Bonus) (Gold) Attack Speed Shard, Might Shard, Armor Shard (√)
+(99) (Stat Bonus) (Silver) Might Shard, Attack Damage Shard (√), Critical Strike Shard
+(100) (Stat Bonus) (Silver) Ability Haste Shard, Critical Strike Shard (√), Might Shard
+(101) (Stat Bonus) (Silver) Lethality Shard, Might Shard (√), Ability Haste Shard
+(102) (Stat Bonus) (Gold) Magic Penetration Shard, Ability Haste Shard, Unbreakable Shard (√)
+(103) (Stat Bonus) (Silver) Unbreakable Shard, Armor Shard (√), Might Shard
+(104) (Stat Bonus) (Prismatic) Armor Penetration Shard, Tenacity Shard, Omnivamp Shard (√)
+(105) (Stat Bonus) (Silver) Health Shard (√), Might Shard, Magic Resist Shard
+(106) (Stat Bonus) (Gold) Ability Power Shard, Swiftness Shard (√), Critical Strike Shard
+(107) (Stat Bonus) (Silver) Swiftness Shard, Lethality Shard, Unbreakable Shard (√)
+(108) (Stat Bonus) (Silver) Health Shard (√), Magic Resist Shard, Ability Power Shard
+(109) (Stat Bonus) (Silver) Attack Damage Shard, Ability Power Shard (√), Might Shard
+(110) (Stat Bonus) (Prismatic) Magic Penetration Shard, Health and Size Shard (√), Tenacity Shard
+(111) (Stat Bonus) (Silver) Armor Shard, Unbreakable Shard (√), Magic Penetration Shard
+(112) (Stat Bonus) (Gold) Ability Power Shard, Unbreakable Shard (√), Ability Haste Shard
+(113) (Stat Bonus) (Gold) Lethality Shard, Critical Strike Shard, Ability Power Shard (√)
+(114) (Stat Bonus) (Gold) Ability Haste Shard, Unbreakable Shard (√), Swiftness Shard
+(115) (Stat Bonus) (Gold) Magic Resist Shard, Unbreakable Shard (√), Ability Power Shard
+(116) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard, Unbreakable Shard (√)
+(117) (Stat Bonus) (Silver) Magic Penetration Shard, Ability Haste Shard (√), Critical Strike Shard
+(118) (Stat Bonus) (Silver) Might Shard, Attack Speed Shard, Armor Shard (√)
+(119) (Stat Bonus) (Silver) Unbreakable Shard (√), Swiftness Shard, Lethality Shard
+(120) (Stat Bonus) (Silver) Might Shard, Attack Damage Shard, Swiftness Shard (√)
+(121) (Stat Bonus) (Silver) Swiftness Shard, Health Shard (√), Ability Power Shard
+(122) (Stat Bonus) (Gold) Swiftness Shard, Attack Damage Shard, Unbreakable Shard (√)
+(123) (Stat Bonus) (Silver) Critical Strike Shard, Health Shard, Unbreakable Shard (√)
+(124) (Stat Bonus) (Gold) Attack Damage Shard, Magic Resist Shard (√), Critical Strike Shard
+(125) (Stat Bonus) (Silver) Unbreakable Shard (√), Might Shard, Magic Resist Shard
+(126) (Stat Bonus) (Silver) Lethality Shard, Ability Power Shard, Armor Shard (√)
+(127) (Stat Bonus) (Silver) Ability Power Shard, Critical Strike Shard, Health Shard (√)
+(128) (Stat Bonus) (Prismatic) Omnivamp Shard, Heal & Shield Power Shard, Health and Size Shard (√)
+(129) (Stat Bonus) (Silver) Magic Penetration Shard, Health Shard (√), Ability Haste Shard
+(130) (Stat Bonus) (Silver) Armor Shard (√), Magic Resist Shard, Ability Haste Shard
+(131) (Stat Bonus) (Gold) Swiftness Shard, Unbreakable Shard, Health Shard (√)
+(132) (Stat Bonus) (Silver) Might Shard, Ability Power Shard (√), Ability Haste Shard
+(133) (Stat Bonus) (Silver) Lethality Shard, Swiftness Shard (√), Critical Strike Shard
+(134) (Stat Bonus) (Silver) Magic Penetration Shard, Armor Shard (√), Swiftness Shard
+(135) (Stat Bonus) (Silver) Swiftness Shard, Unbreakable Shard (√), Magic Penetration Shard
+(136) (Stat Bonus) (Silver) Ability Power Shard, Health Shard (√), Swiftness Shard
+(137) (Stat Bonus) (Silver) Armor Shard (√), Might Shard, Magic Penetration Shard
+(138) (Stat Bonus) (Silver) Ability Power Shard, Health Shard (√), Lethality Shard
+(139) (Stat Bonus) (Silver) Magic Penetration Shard, Ability Power Shard, Attack Damage Shard (√)
+(140) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard, Armor Shard (√)
+(141) (Stat Bonus) (Silver) Might Shard, Critical Strike Shard, Lethality Shard (√)
+(142) (Stat Bonus) (Silver) Armor Shard, Unbreakable Shard (√), Swiftness Shard
+(143) (Stat Bonus) (Silver) Attack Damage Shard (√), Lethality Shard, Ability Power Shard
+(144) (Stat Bonus) (Gold) Health Shard (√), Attack Damage Shard, Lethality Shard
+(145) (Stat Bonus) (Gold) Attack Speed Shard, Health Shard (√), Magic Resist Shard
+(146) (Stat Bonus) (Prismatic) Move Speed Shard, Tenacity Shard, Omnivamp Shard (√)
+(147) (Stat Bonus) (Prismatic) Health and Size Shard (√), Heal & Shield Power Shard, Armor Penetration Shard
+(148) (Stat Bonus) (Silver) Swiftness Shard (√), Critical Strike Shard, Ability Power Shard
+(149) (Stat Bonus) (Gold) Armor Shard, Health Shard (√), Critical Strike Shard
+(150) (Stat Bonus) (Gold) Health Shard (√), Critical Strike Shard, Magic Resist Shard
+(151) (Stat Bonus) (Prismatic) Heal & Shield Power Shard, Health and Size Shard (√), Tenacity Shard
+(152) (Stat Bonus) (Gold) Attack Damage Shard, Attack Speed Shard (√), Ability Power Shard
+(153) (Stat Bonus) (Gold) Critical Strike Shard, Might Shard (√), Ability Haste Shard
+(154) (Stat Bonus) (Silver) Swiftness Shard, Attack Speed Shard (√), Magic Penetration Shard
+(155) (Stat Bonus) (Gold) Magic Penetration Shard, Attack Speed Shard, Lethality Shard (√)
+(156) (Stat Bonus) (Prismatic) Armor Penetration Shard (√), Magic Penetration Shard, Omnivamp Shard
+(157) (Stat Bonus) (Silver) Swiftness Shard, Might Shard, Attack Speed Shard (√)
+(158) (Stat Bonus) (Gold) Ability Haste Shard, Magic Penetration Shard, Lethality Shard (√)
+(159) (Stat Bonus) (Gold) Armor Shard, Lethality Shard, Attack Damage Shard (√)
+(160) (Stat Bonus) (Silver) Unbreakable Shard (√), Attack Damage Shard, Magic Resist Shard
+(161) (Stat Bonus) (Silver) Ability Haste Shard, Lethality Shard (√), Might Shard
+(162) (Stat Bonus) (Silver) Magic Resist Shard, Attack Speed Shard (√), Ability Haste Shard
+(163) (Stat Bonus) (Prismatic) Move Speed Shard, Tenacity Shard, Heal & Shield Power Shard (√)
+(164) (Stat Bonus) (Silver) Magic Resist Shard (√), Magic Penetration Shard, Might Shard
+(165) (Stat Bonus) (Gold) Ability Power Shard, Health Shard (√), Lethality Shard
+(166) (Stat Bonus) (Silver) Ability Haste Shard, Health Shard (√), Magic Penetration Shard
+(167) (Stat Bonus) (Silver) Armor Shard, Unbreakable Shard (√), Ability Power Shard
+(168) (Stat Bonus) (Silver) Critical Strike Shard, Attack Damage Shard (√), Magic Penetration Shard
+(169) (Stat Bonus) (Prismatic) Move Speed Shard, Omnivamp Shard (√), Tenacity Shard
+(170) (Stat Bonus) (Silver) Ability Haste Shard, Magic Resist Shard, Attack Damage Shard (√)
+(171) (Stat Bonus) (Silver) Magic Penetration Shard, Armor Shard, Attack Damage Shard (√)
+(172) (Stat Bonus) (Silver) Armor Shard (√), Magic Penetration Shard, Critical Strike Shard
+(173) (Stat Bonus) (Silver) Attack Speed Shard (√), Ability Power Shard, Critical Strike Shard
+(174) (Stat Bonus) (Silver) Magic Penetration Shard, Unbreakable Shard (√), Health Shard
+(175) (Stat Bonus) (Silver) Magic Penetration Shard, Magic Resist Shard (√), Critical Strike Shard
+(176) (Stat Bonus) (Silver) Health Shard, Armor Shard (√), Might Shard
+(177) (Stat Bonus) (Gold) Attack Damage Shard, Unbreakable Shard (√), Attack Speed Shard
+(178) (Stat Bonus) (Silver) Lethality Shard, Magic Resist Shard (√), Ability Power Shard
+(179) (Stat Bonus) (Silver) Ability Power Shard, Lethality Shard (√), Might Shard
+(180) (Stat Bonus) (Silver) Magic Resist Shard (√), Critical Strike Shard, Might Shard
+(181) (Stat Bonus) (Gold) Health Shard (√), Magic Penetration Shard, Lethality Shard
+(182) (Stat Bonus) (Silver) Swiftness Shard, Magic Penetration Shard, Unbreakable Shard (√)
+(183) (Stat Bonus) (Gold) Attack Speed Shard, Health Shard (√), Armor Shard
+(184) (Stat Bonus) (Silver) Swiftness Shard, Magic Penetration Shard, Attack Damage Shard (√)
+(185) (Stat Bonus) (Gold) Ability Power Shard, Ability Haste Shard, Lethality Shard (√)
+(186) (Stat Bonus) (Silver) Armor Shard, Ability Power Shard, Attack Speed Shard (√)
+(187) (Stat Bonus) (Silver) Attack Damage Shard (√), Ability Haste Shard, Might Shard
+(188) (Stat Bonus) (Gold) Attack Speed Shard (√), Critical Strike Shard, Ability Power Shard
+(189) (Stat Bonus) (Gold) Critical Strike Shard, Attack Damage Shard (√), Attack Speed Shard
+(190) (Stat Bonus) (Silver) Ability Haste Shard, Might Shard, Attack Speed Shard (√)
+(191) (Stat Bonus) (Gold) Unbreakable Shard, Armor Shard (√), Magic Penetration Shard
+(192) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Penetration Shard, Lethality Shard
+(193) (Stat Bonus) (Silver) Might Shard, Swiftness Shard (√), Critical Strike Shard
+(194) (Stat Bonus) (Gold) Critical Strike Shard, Swiftness Shard (√), Lethality Shard
+(195) (Stat Bonus) (Silver) Lethality Shard, Magic Penetration Shard, Might Shard (√)
+(196) (Stat Bonus) (Prismatic) Omnivamp Shard (√), Heal & Shield Power Shard, Magic Penetration Shard
+(197) (Stat Bonus) (Gold) Attack Speed Shard (√), Magic Resist Shard, Critical Strike Shard
+(198) (Stat Bonus) (Silver) Lethality Shard, Swiftness Shard (√), Attack Damage Shard
+(199) (Stat Bonus) (Gold) Magic Resist Shard, Lethality Shard (√), Might Shard
+(200) (Stat Bonus) (Gold) Ability Haste Shard, Magic Resist Shard (√), Might Shard
+(201) (Stat Bonus) (Silver) Unbreakable Shard (√), Might Shard, Attack Damage Shard
+(202) (Stat Bonus) (Prismatic) Omnivamp Shard, Armor Penetration Shard (√), Tenacity Shard
+(203) (Stat Bonus) (Gold) Lethality Shard, Attack Speed Shard (√), Magic Resist Shard
+(204) (Stat Bonus) (Silver) Health Shard, Swiftness Shard (√), Ability Haste Shard
+(205) (Stat Bonus) (Silver) Swiftness Shard (√), Critical Strike Shard, Attack Damage Shard
+(206) (Stat Bonus) (Silver) Swiftness Shard (√), Magic Penetration Shard, Attack Damage Shard
+(207) (Stat Bonus) (Gold) Critical Strike Shard, Magic Resist Shard (√), Ability Power Shard
+(208) (Stat Bonus) (Silver) Critical Strike Shard, Unbreakable Shard (√), Lethality Shard
+(209) (Stat Bonus) (Silver) Ability Haste Shard, Health Shard (√), Ability Power Shard
+(210) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard (√), Critical Strike Shard
+(211) (Stat Bonus) (Silver) Magic Resist Shard, Magic Penetration Shard, Health Shard (√)
+(212) (Stat Bonus) (Silver) Magic Resist Shard, Magic Penetration Shard, Unbreakable Shard (√)
+(213) (Stat Bonus) (Gold) Ability Haste Shard, Magic Penetration Shard, Critical Strike Shard (√)
+(214) (Stat Bonus) (Gold) Magic Resist Shard (√), Might Shard, Ability Haste Shard
+(215) (Stat Bonus) (Gold) Swiftness Shard, Unbreakable Shard (√), Attack Damage Shard
+(216) (Stat Bonus) (Silver) Critical Strike Shard, Attack Speed Shard (√), Ability Haste Shard
+(217) (Stat Bonus) (Silver) Attack Damage Shard (√), Swiftness Shard, Critical Strike Shard
+(218) (Stat Bonus) (Gold) Ability Haste Shard, Attack Speed Shard, Magic Resist Shard (√)
+(219) (Stat Bonus) (Prismatic) Move Speed Shard, Armor Penetration Shard (√), Omnivamp Shard
+(220) (Stat Bonus) (Silver) Magic Resist Shard, Attack Speed Shard (√), Might Shard
+(221) (Stat Bonus) (Silver) Ability Haste Shard, Might Shard, Armor Shard (√)
+(222) (Stat Bonus) (Gold) Unbreakable Shard (√), Ability Haste Shard, Critical Strike Shard
+(223) (Stat Bonus) (Silver) Unbreakable Shard (√), Armor Shard, Lethality Shard
+(224) (Stat Bonus) (Silver) Magic Penetration Shard, Attack Damage Shard, Unbreakable Shard (√)
+(225) (Stat Bonus) (Silver) Magic Penetration Shard, Lethality Shard (√), Critical Strike Shard
+(226) (Stat Bonus) (Silver) Critical Strike Shard, Magic Penetration Shard, Swiftness Shard (√)
+(227) (Stat Bonus) (Silver) Critical Strike Shard, Attack Speed Shard, Lethality Shard (√)
+(228) (Stat Bonus) (Silver) Might Shard, Magic Penetration Shard, Health Shard (√)
+(229) (Stat Bonus) (Gold) Ability Power Shard, Armor Shard (√), Swiftness Shard
+(230) (Stat Bonus) (Gold) Health Shard (√), Lethality Shard, Critical Strike Shard
+(231) (Stat Bonus) (Silver) Swiftness Shard (√), Lethality Shard, Critical Strike Shard
+(232) (Stat Bonus) (Prismatic) Magic Penetration Shard, Health and Size Shard (√), Armor Penetration Shard
+(233) (Stat Bonus) (Silver) Magic Penetration Shard, Attack Speed Shard, Attack Damage Shard (√)
+(234) (Stat Bonus) (Silver) Armor Shard (√), Unbreakable Shard, Attack Damage Shard
+(235) (Stat Bonus) (Silver) Armor Shard (√), Attack Speed Shard, Ability Haste Shard
+(236) (Stat Bonus) (Silver) Unbreakable Shard (√), Ability Haste Shard, Might Shard
+(237) (Stat Bonus) (Silver) Magic Penetration Shard, Magic Resist Shard (√), Might Shard
+(238) (Stat Bonus) (Gold) Health Shard (√), Might Shard, Armor Shard
+(239) (Stat Bonus) (Gold) Might Shard, Health Shard (√), Armor Shard
+(240) (Stat Bonus) (Silver) Ability Power Shard, Health Shard (√), Unbreakable Shard
+(241) (Stat Bonus) (Silver) Attack Damage Shard, Ability Haste Shard, Attack Speed Shard (√)
+(242) (Stat Bonus) (Prismatic) Move Speed Shard, Heal & Shield Power Shard, Armor Penetration Shard (√)
+(243) (Stat Bonus) (Prismatic) Magic Penetration Shard, Move Speed Shard, Heal & Shield Power Shard (√)
+(244) (Stat Bonus) (Silver) Ability Haste Shard, Attack Speed Shard, Attack Damage Shard (√)
+(245) (Stat Bonus) (Silver) Might Shard, Armor Shard, Unbreakable Shard (√)
+(246) (Stat Bonus) (Silver) Armor Shard, Magic Penetration Shard, Ability Power Shard (√)
+(247) (Stat Bonus) (Silver) Swiftness Shard, Critical Strike Shard, Ability Haste Shard (√)
+(248) (Stat Bonus) (Gold) Lethality Shard, Critical Strike Shard, Health Shard (√)
+(249) (Stat Bonus) (Silver) Lethality Shard, Attack Speed Shard, Ability Power Shard (√)
+(250) (Stat Bonus) (Prismatic) Health and Size Shard (√), Magic Penetration Shard, Armor Penetration Shard
+(251) (Stat Bonus) (Silver) Critical Strike Shard, Attack Damage Shard, Unbreakable Shard (√)
+(252) (Stat Bonus) (Silver) Might Shard, Magic Resist Shard, Armor Shard (√)
+(253) (Stat Bonus) (Gold) Magic Resist Shard, Armor Shard (√), Might Shard
+(254) (Stat Bonus) (Gold) Magic Penetration Shard, Lethality Shard, Critical Strike Shard (√)
+(255) (Stat Bonus) (Silver) Unbreakable Shard, Health Shard (√), Magic Penetration Shard
+(256) (Stat Bonus) (Prismatic) Armor Penetration Shard, Move Speed Shard, Omnivamp Shard (√)
+(257) (Stat Bonus) (Silver) Attack Speed Shard, Critical Strike Shard (√), Might Shard
+(258) (Stat Bonus) (Gold) Magic Resist Shard, Health Shard (√), Ability Power Shard
+(259) (Stat Bonus) (Silver) Magic Resist Shard, Ability Haste Shard, Swiftness Shard (√)
+(260) (Stat Bonus) (Silver) Ability Haste Shard, Swiftness Shard (√), Attack Damage Shard
+(261) (Stat Bonus) (Gold) Unbreakable Shard (√), Armor Shard, Magic Penetration Shard
+(262) (Stat Bonus) (Silver) Health Shard (√), Attack Speed Shard, Magic Resist Shard
+(263) (Stat Bonus) (Silver) Attack Damage Shard (√), Magic Penetration Shard, Lethality Shard
+(264) (Stat Bonus) (Gold) Ability Power Shard, Ability Haste Shard, Unbreakable Shard (√)
+(265) (Stat Bonus) (Silver) Ability Power Shard, Armor Shard (√), Swiftness Shard
+(266) (Stat Bonus) (Silver) Ability Power Shard, Magic Resist Shard, Unbreakable Shard (√)
+(267) (Stat Bonus) (Gold) Armor Shard (√), Magic Penetration Shard, Might Shard
+(268) (Stat Bonus) (Silver) Lethality Shard, Attack Speed Shard (√), Swiftness Shard
+(269) (Stat Bonus) (Silver) Health Shard (√), Attack Damage Shard, Armor Shard
+(270) (Stat Bonus) (Gold) Attack Speed Shard, Magic Resist Shard (√), Magic Penetration Shard
+(271) (Stat Bonus) (Prismatic) Heal & Shield Power Shard, Magic Penetration Shard, Armor Penetration Shard (√)
+(272) (Stat Bonus) (Silver) Attack Damage Shard (√), Critical Strike Shard, Ability Power Shard
+(273) (Stat Bonus) (Silver) Unbreakable Shard, Armor Shard, Health Shard (√)
+(274) (Stat Bonus) (Gold) Ability Power Shard, Might Shard (√), Lethality Shard
+(275) (Stat Bonus) (Silver) Swiftness Shard (√), Critical Strike Shard, Lethality Shard
+(276) (Stat Bonus) (Silver) Magic Resist Shard, Critical Strike Shard, Might Shard (√)
+(277) (Stat Bonus) (Gold) Armor Shard (√), Attack Damage Shard, Swiftness Shard
+(278) (Stat Bonus) (Silver) Magic Resist Shard (√), Magic Penetration Shard, Ability Power Shard
+(279) (Stat Bonus) (Silver) Attack Speed Shard (√), Might Shard, Magic Resist Shard
+(280) (Stat Bonus) (Silver) Unbreakable Shard (√), Might Shard, Ability Haste Shard
+(281) (Stat Bonus) (Silver) Lethality Shard (√), Ability Haste Shard, Ability Power Shard
+(282) (Stat Bonus) (Prismatic) Health and Size Shard (√), Tenacity Shard, Armor Penetration Shard
+(283) (Stat Bonus) (Silver) Attack Damage Shard (√), Critical Strike Shard, Swiftness Shard
+(284) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard (√), Ability Power Shard
+(285) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Penetration Shard, Critical Strike Shard
+(286) (Stat Bonus) (Prismatic) Tenacity Shard, Heal & Shield Power Shard (√), Magic Penetration Shard
+(287) (Stat Bonus) (Gold) Ability Haste Shard, Health Shard (√), Attack Speed Shard
+(288) (Stat Bonus) (Silver) Magic Penetration Shard, Attack Damage Shard (√), Ability Haste Shard
+(289) (Stat Bonus) (Silver) Ability Haste Shard, Might Shard, Attack Speed Shard (√)
+(290) (Stat Bonus) (Gold) Unbreakable Shard (√), Attack Speed Shard, Magic Penetration Shard
+(291) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard (√), Critical Strike Shard
+(292) (Stat Bonus) (Gold) Ability Haste Shard, Might Shard, Swiftness Shard (√)
+(293) (Stat Bonus) (Gold) Ability Haste Shard, Attack Damage Shard (√), Magic Penetration Shard
+(294) (Stat Bonus) (Silver) Armor Shard, Ability Haste Shard, Magic Resist Shard (√)
+(295) (Stat Bonus) (Silver) Attack Speed Shard, Might Shard (√), Lethality Shard
+(296) (Stat Bonus) (Silver) Health Shard (√), Ability Power Shard, Unbreakable Shard
+(297) (Stat Bonus) (Silver) Armor Shard, Health Shard (√), Unbreakable Shard
+(298) (Stat Bonus) (Silver) Health Shard (√), Magic Penetration Shard, Magic Resist Shard
+(299) (Stat Bonus) (Silver) Health Shard (√), Attack Speed Shard, Attack Damage Shard
+(300) (Stat Bonus) (Silver) Health Shard (√), Swiftness Shard, Critical Strike Shard
+(301) (Stat Bonus) (Prismatic) Health and Size Shard (√), Heal & Shield Power Shard, Magic Penetration Shard
+(302) (Stat Bonus) (Gold) Magic Penetration Shard, Ability Haste Shard, Magic Resist Shard (√)
+(303) (Stat Bonus) (Gold) Lethality Shard, Magic Penetration Shard, Ability Haste Shard (√)
+(304) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard (√), Armor Shard
+(305) (Stat Bonus) (Gold) Ability Power Shard, Swiftness Shard (√), Ability Haste Shard
+(306) (Stat Bonus) (Silver) Health Shard (√), Swiftness Shard, Attack Damage Shard
+(307) (Stat Bonus) (Gold) Health Shard (√), Attack Damage Shard, Swiftness Shard
+(308) (Stat Bonus) (Silver) Magic Penetration Shard, Critical Strike Shard, Health Shard (√)
+(309) (Stat Bonus) (Silver) Attack Speed Shard, Unbreakable Shard (√), Magic Penetration Shard
+(310) (Stat Bonus) (Gold) Unbreakable Shard (√), Attack Speed Shard, Ability Power Shard
+(311) (Stat Bonus) (Gold) Might Shard, Ability Haste Shard (√), Critical Strike Shard
+(312) (Stat Bonus) (Gold) Health Shard (√), Magic Resist Shard, Ability Power Shard
+(313) (Stat Bonus) (Gold) Magic Resist Shard (√), Attack Speed Shard, Might Shard
+(314) (Stat Bonus) (Silver) Magic Penetration Shard, Lethality Shard (√), Swiftness Shard
+(315) (Stat Bonus) (Silver) Unbreakable Shard (√), Swiftness Shard, Might Shard
+(316) (Stat Bonus) (Silver) Ability Power Shard, Attack Speed Shard, Magic Resist Shard (√)
+(317) (Stat Bonus) (Silver) Unbreakable Shard (√), Armor Shard, Lethality Shard
+(318) (Stat Bonus) (Silver) Swiftness Shard (√), Critical Strike Shard, Might Shard
+(319) (Stat Bonus) (Silver) Attack Speed Shard, Ability Power Shard, Armor Shard (√)
+(320) (Stat Bonus) (Prismatic) Move Speed Shard, Omnivamp Shard (√), Magic Penetration Shard
+(321) (Stat Bonus) (Gold) Might Shard, Magic Penetration Shard, Health Shard (√)
+(322) (Stat Bonus) (Silver) Unbreakable Shard (√), Attack Speed Shard, Ability Power Shard
+(323) (Stat Bonus) (Gold) Attack Speed Shard, Critical Strike Shard, Attack Damage Shard (√)
+(324) (Stat Bonus) (Prismatic) Heal & Shield Power Shard, Tenacity Shard, Armor Penetration Shard (√)
+(325) (Stat Bonus) (Silver) Lethality Shard, Armor Shard, Attack Speed Shard (√)
+(326) (Stat Bonus) (Prismatic) Magic Penetration Shard, Move Speed Shard, Heal & Shield Power Shard (√)
+(327) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard (√), Might Shard
+(328) (Stat Bonus) (Silver) Attack Speed Shard, Health Shard (√), Armor Shard
+(329) (Stat Bonus) (Silver) Ability Haste Shard, Might Shard, Critical Strike Shard (√)
+(330) (Stat Bonus) (Silver) Ability Power Shard, Ability Haste Shard (√), Magic Penetration Shard
+(331) (Stat Bonus) (Silver) Armor Shard, Magic Penetration Shard, Lethality Shard (√)
+(332) (Stat Bonus) (Silver) Swiftness Shard (√), Ability Haste Shard, Armor Shard
+(333) (Stat Bonus) (Silver) Ability Power Shard, Attack Damage Shard (√), Armor Shard
+(334) (Stat Bonus) (Silver) Armor Shard, Magic Penetration Shard, Armor Shard (√)
+(335) (Stat Bonus) (Silver) Swiftness Shard, Ability Power Shard (√), Attack Speed Shard
+(336) (Stat Bonus) (Silver) Magic Penetration Shard, Unbreakable Shard (√), Might Shard
+(337) (Stat Bonus) (Prismatic) Health and Size Shard (√), Omnivamp Shard, Heal & Shield Power Shard
+(338) (Stat Bonus) (Silver) Magic Resist Shard (√), Ability Haste Shard, Critical Strike Shard
+(339) (Stat Bonus) (Silver) Armor Shard (√), Attack Speed Shard, Critical Strike Shard
+(340) (Stat Bonus) (Gold) Ability Haste Shard, Health Shard (√), Ability Power Shard
+(341) (Stat Bonus) (Silver) Magic Resist Shard, Might Shard, Unbreakable Shard (√)
+(342) (Stat Bonus) (Gold) Unbreakable Shard (√), Swiftness Shard, Magic Penetration Shard
+(343) (Stat Bonus) (Silver) Attack Speed Shard, Ability Power Shard, Magic Resist Shard (√)
+(344) (Stat Bonus) (Gold) Attack Damage Shard, Unbreakable Shard (√), Swiftness Shard
+(345) (Stat Bonus) (Silver) Swiftness Shard (√), Critical Strike Shard, Ability Power Shard
+(346) (Stat Bonus) (Gold) Might Shard, Attack Speed Shard, Attack Damage Shard (√)
+(347) (Stat Bonus) (Gold) Magic Resist Shard, Lethality Shard (√), Ability Power Shard
+(348) (Stat Bonus) (Silver) Armor Shard (√), Ability Power Shard, Critical Strike Shard
+(349) (Stat Bonus) (Gold) Critical Strike Shard, Magic Resist Shard (√), Attack Damage Shard
+(350) (Stat Bonus) (Silver) Armor Shard, Might Shard, Magic Resist Shard (√)
+(351) (Stat Bonus) (Gold) Armor Shard (√), Attack Damage Shard, Magic Resist Shard
+(352) (Stat Bonus) (Silver) Attack Speed Shard, Magic Resist Shard, Attack Damage Shard (√)
+(353) (Stat Bonus) (Silver) Ability Power Shard, Ability Haste Shard, Might Shard (√)
+(354) (Stat Bonus) (Silver) Magic Penetration Shard, Armor Shard (√), Attack Damage Shard
+(355) (Stat Bonus) (Gold) Magic Penetration Shard, Attack Damage Shard, Magic Resist Shard (√)
+(356) (Stat Bonus) (Prismatic) Omnivamp Shard, Move Speed Shard (√), Tenacity Shard
+(357) (Stat Bonus) (Silver) Attack Speed Shard (√), Lethality Shard, Attack Damage Shard
+(358) (Stat Bonus) (Gold) Attack Speed Shard, Critical Strike Shard, Might Shard (√)
+(359) (Stat Bonus) (Prismatic) Omnivamp Shard, Armor Penetration Shard (√), Magic Penetration Shard
+(360) (Stat Bonus) (Silver) Ability Haste Shard, Ability Power Shard, Armor Shard (√)
+(361) (Stat Bonus) (Silver) Magic Resist Shard, Armor Shard, Health Shard (√)
+(362) (Stat Bonus) (Silver) Critical Strike Shard, Armor Shard (√), Magic Resist Shard
+(363) (Stat Bonus) (Gold) Magic Penetration Shard, Swiftness Shard, Unbreakable Shard (√)
+(364) (Stat Bonus) (Prismatic) Armor Penetration Shard, Tenacity Shard, Health and Size Shard (√)
+(365) (Stat Bonus) (Silver) Lethality Shard, Critical Strike Shard, Armor Shard (√)
+(366) (Stat Bonus) (Silver) Ability Power Shard, Ability Haste Shard, Health Shard (√)
+(367) (Stat Bonus) (Silver) Might Shard, Magic Resist Shard, Health Shard (√)
+(368) (Stat Bonus) (Silver) Attack Damage Shard, Armor Shard, Health Shard (√)
+(369) (Stat Bonus) (Silver) Health Shard (√), Attack Speed Shard, Lethality Shard
+(370) (Stat Bonus) (Prismatic) Magic Penetration Shard, Move Speed Shard, Health and Size Shard (√)
+(371) (Stat Bonus) (Silver) Magic Resist Shard (√), Might Shard, Ability Haste Shard
+(372) (Stat Bonus) (Gold) Magic Resist Shard (√), Magic Penetration Shard, Critical Strike Shard
+(373) (Stat Bonus) (Silver) Critical Strike Shard, Attack Damage Shard (√), Might Shard
+(374) (Stat Bonus) (Prismatic) Move Speed Shard, Armor Penetration Shard, Tenacity Shard (√)
+(375) (Stat Bonus) (Silver) Swiftness Shard, Magic Penetration Shard, Unbreakable Shard (√)
+(376) (Stat Bonus) (Silver) Attack Damage Shard, Ability Haste Shard, Lethality Shard (√)
+(377) (Stat Bonus) (Prismatic) Move Speed Shard, Armor Penetration Shard, Health and Size Shard (√)
+(378) (Stat Bonus) (Prismatic) Health and Size Shard (√), Omnivamp Shard, Tenacity Shard
+(379) (Stat Bonus) (Gold) Critical Strike Shard, Magic Penetration Shard, Lethality Shard (√)
+(380) (Stat Bonus) (Silver) Ability Power Shard, Attack Damage Shard (√), Might Shard
+(381) (Stat Bonus) (Gold) Attack Speed Shard, Health Shard (√), Lethality Shard
+(382) (Stat Bonus) (Gold) Ability Haste Shard, Lethality Shard (√), Magic Penetration Shard
+(383) (Stat Bonus) (Silver) Armor Shard (√), Magic Resist Shard, Ability Power Shard
+(384) (Stat Bonus) (Silver) Might Shard, Critical Strike Shard (√), Ability Haste Shard
+(385) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Penetration Shard, Might Shard
+(386) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard, Armor Shard (√)
+(387) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Resist Shard, Health Shard
+(388) (Stat Bonus) (Silver) Critical Strike Shard, Lethality Shard, Magic Resist Shard (√)
+(389) (Stat Bonus) (Gold) Health Shard (√), Might Shard, Attack Damage Shard
+(390) (Stat Bonus) (Silver) Ability Power Shard, Magic Penetration Shard, Lethality Shard (√)
+(391) (Stat Bonus) (Silver) Lethality Shard, Might Shard, Magic Resist Shard (√)
+(392) (Stat Bonus) (Prismatic) Magic Penetration Shard, Heal & Shield Power Shard, Tenacity Shard (√)
+(393) (Stat Bonus) (Gold) Critical Strike Shard, Attack Damage Shard, Armor Shard (√)
+(394) (Stat Bonus) (Silver) Swiftness Shard, Attack Damage Shard (√), Magic Resist Shard
+(395) (Stat Bonus) (Silver) Magic Penetration Shard, Critical Strike Shard (√), Might Shard
+(396) (Stat Bonus) (Silver) Unbreakable Shard, Attack Speed Shard, Ability Haste Shard (√)
+(397) (Stat Bonus) (Silver) Ability Power Shard, Lethality Shard (√), Ability Haste Shard
+(398) (Stat Bonus) (Gold) Armor Shard, Swiftness Shard, Health Shard (√)
+(399) (Stat Bonus) (Silver) Might Shard, Magic Penetration Shard, Magic Resist Shard (√)
+(400) (Stat Bonus) (Silver) Unbreakable Shard (√), Lethality Shard, Might Shard
+(401) (Stat Bonus) (Silver) Armor Shard, Attack Damage Shard, Lethality Shard (√)
+(402) (Stat Bonus) (Silver) Swiftness Shard, Might Shard, Magic Resist Shard (√)
+(403) (Stat Bonus) (Gold) Critical Strike Shard, Magic Resist Shard (√), Lethality Shard
+(404) (Stat Bonus) (Prismatic) Omnivamp Shard, Move Speed Shard, Health and Size Shard (√)
+(405) (Stat Bonus) (Silver) Unbreakable Shard (√), Ability Haste Shard, Armor Shard
+(406) (Stat Bonus) (Silver) Unbreakable Shard (√), Ability Haste Shard, Might Shard
+(407) (Stat Bonus) (Gold) Lethality Shard, Unbreakable Shard (√), Attack Damage Shard
+(408) (Stat Bonus) (Gold) Health Shard (√), Attack Speed Shard, Magic Resist Shard
+(409) (Stat Bonus) (Silver) Magic Resist Shard, Critical Strike Shard, Swiftness Shard (√)
+(410) (Stat Bonus) (Silver) Ability Haste Shard, Armor Shard (√), Attack Damage Shard
+(411) (Stat Bonus) (Gold) Magic Resist Shard, Health Shard (√), Attack Damage Shard
+(412) (Stat Bonus) (Prismatic) Health and Size Shard (√), Omnivamp Shard, Armor Penetration Shard
+(413) (Stat Bonus) (Gold) Attack Damage Shard, Swiftness Shard (√), Magic Penetration Shard
+(414) (Stat Bonus) (Silver) Unbreakable Shard (√), Critical Strike Shard, Ability Power Shard
+(415) (Stat Bonus) (Prismatic) Omnivamp Shard, Tenacity Shard, Health and Size Shard (√)
+(416) (Stat Bonus) (Gold) Attack Damage Shard, Magic Resist Shard (√), Might Shard
+(417) (Stat Bonus) (Silver) Attack Speed Shard, Critical Strike Shard (√), Lethality Shard
+(418) (Stat Bonus) (Silver) Critical Strike Shard, Swiftness Shard, Attack Speed Shard (√)
+(419) (Stat Bonus) (Silver) Might Shard, Unbreakable Shard (√), Magic Penetration Shard
+(420) (Stat Bonus) (Gold) Attack Damage Shard (√), Ability Haste Shard, Attack Speed Shard
+(421) (Stat Bonus) (Prismatic) Tenacity Shard, Move Speed Shard (√), Magic Penetration Shard
+(422) (Stat Bonus) (Silver) Attack Speed Shard, Ability Power Shard, Health Shard (√)
+(423) (Stat Bonus) (Gold) Ability Power Shard, Swiftness Shard, Health Shard (√)
+(424) (Stat Bonus) (Silver) Ability Haste Shard, Attack Damage Shard, Attack Speed Shard (√)
+(425) (Stat Bonus) (Silver) Attack Speed Shard, Attack Damage Shard (√), Lethality Shard
+(426) (Stat Bonus) (Silver) Attack Damage Shard, Armor Shard (√), Ability Haste Shard
+(427) (Stat Bonus) (Silver) Attack Speed Shard, Magic Resist Shard, Swiftness Shard (√)
+(428) (Stat Bonus) (Silver) Might Shard, Magic Penetration Shard, Armor Shard (√)
+(429) (Stat Bonus) (Gold) Swiftness Shard, Health Shard (√), Critical Strike Shard
+(430) (Stat Bonus) (Gold) Magic Penetration Shard, Critical Strike Shard, Attack Damage Shard (√)
+(431) (Stat Bonus) (Silver) Attack Damage Shard (√), Magic Penetration Shard, Ability Power Shard
+(432) (Stat Bonus) (Prismatic) Tenacity Shard (√), Magic Penetration Shard, Heal & Shield Power Shard
+(433) (Stat Bonus) (Gold) Magic Penetration Shard, Attack Damage Shard, Unbreakable Shard (√)
+(434) (Stat Bonus) (Silver) Ability Power Shard, Critical Strike Shard, Attack Speed Shard (√)
+(435) (Stat Bonus) (Silver) Armor Shard (√), Magic Penetration Shard, Ability Power Shard
+(436) (Stat Bonus) (Prismatic) Omnivamp Shard, Move Speed Shard, Health and Size Shard (√)
+(437) (Stat Bonus) (Silver) Ability Power Shard, Swiftness Shard (√), Lethality Shard
+(438) (Stat Bonus) (Silver) Magic Resist Shard (√), Attack Speed Shard, Ability Haste Shard
+(439) (Stat Bonus) (Silver) Unbreakable Shard, Ability Haste Shard, Health Shard (√)
+(440) (Stat Bonus) (Silver) Health Shard (√), Attack Damage Shard, Unbreakable Shard
+(441) (Stat Bonus) (Silver) Swiftness Shard, Armor Shard (√), Ability Haste Shard
+(442) (Stat Bonus) (Silver) Lethality Shard, Magic Resist Shard (√), Attack Speed Shard
+(443) (Stat Bonus) (Silver) Armor Shard (√), Attack Speed Shard, Might Shard
+(444) (Stat Bonus) (Silver) Ability Power Shard, Health Shard (√), Critical Strike Shard
+(445) (Stat Bonus) (Prismatic) Omnivamp Shard (√), Armor Penetration Shard, Heal & Shield Power Shard
+(446) (Stat Bonus) (Silver) Magic Penetration Shard, Attack Damage Shard (√), Critical Strike Shard
+(447) (Stat Bonus) (Silver) Magic Penetration Shard, Ability Power Shard, Might Shard (√)
+(448) (Stat Bonus) (Prismatic) Move Speed Shard, Magic Penetration Shard, Omnivamp Shard (√)
+(449) (Stat Bonus) (Silver) Magic Resist Shard, Ability Haste Shard, Attack Speed Shard (√)
+(450) (Stat Bonus) (Silver) Magic Resist Shard, Magic Penetration Shard, Health Shard (√)
+(451) (Stat Bonus) (Silver) Attack Speed Shard, Unbreakable Shard (√), Ability Haste Shard
+(452) (Stat Bonus) (Silver) Attack Damage Shard, Unbreakable Shard (√), Ability Power Shard
+(453) (Stat Bonus) (Prismatic) Tenacity Shard, Omnivamp Shard (√), Heal & Shield Power Shard
+(454) (Stat Bonus) (Silver) Lethality Shard, Armor Shard (√), Ability Haste Shard
+(455) (Stat Bonus) (Gold) Ability Power Shard, Magic Penetration Shard, Unbreakable Shard (√)
+(456) (Stat Bonus) (Prismatic) Omnivamp Shard, Move Speed Shard, Health and Size Shard (√)
+(457) (Stat Bonus) (Gold) Critical Strike Shard (√), Magic Penetration Shard, Might Shard
+(458) (Stat Bonus) (Gold) Armor Shard (√), Ability Power Shard, Lethality Shard
+(459) (Stat Bonus) (Silver) Attack Damage Shard, Armor Shard, Health Shard (√)
+(460) (Stat Bonus) (Silver) Unbreakable Shard, Health Shard (√), Ability Power Shard
+(461) (Stat Bonus) (Silver) Ability Power Shard, Unbreakable Shard (√), Armor Shard
+(462) (Stat Bonus) (Gold) Swiftness Shard, Attack Speed Shard (√), Ability Haste Shard
+(463) (Stat Bonus) (Silver) Ability Power Shard, Attack Damage Shard, Magic Resist Shard (√)
+(464) (Stat Bonus) (Silver) Attack Speed Shard, Swiftness Shard (√), Critical Strike Shard
+(465) (Stat Bonus) (Silver) Attack Speed Shard, Attack Damage Shard (√), Might Shard
+(466) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard (√), Ability Haste Shard
+(467) (Stat Bonus) (Silver) Attack Damage Shard, Swiftness Shard, Magic Resist Shard (√)
+(468) (Stat Bonus) (Silver) Attack Speed Shard, Armor Shard (√), Attack Damage Shard
+(469) (Stat Bonus) (Silver) Lethality Shard, Armor Shard (√), Critical Strike Shard
+(470) (Stat Bonus) (Silver) Attack Speed Shard, Critical Strike Shard (√), Magic Resist Shard
+(471) (Stat Bonus) (Prismatic) Move Speed Shard, Magic Penetration Shard, Armor Penetration Shard (√)
+(472) (Stat Bonus) (Silver) Health Shard (√), Attack Damage Shard, Attack Speed Shard
+(473) (Stat Bonus) (Prismatic) Health and Size Shard (√), Move Speed Shard, Omnivamp Shard
+(474) (Stat Bonus) (Gold) Critical Strike Shard, Attack Damage Shard (√), Lethality Shard
+(475) (Stat Bonus) (Gold) Critical Strike Shard, Magic Resist Shard (√), Ability Haste Shard
+(476) (Stat Bonus) (Silver) Ability Power Shard, Attack Damage Shard (√), Ability Haste Shard
+(477) (Stat Bonus) (Silver) Magic Penetration Shard, Health Shard (√), Ability Power Shard
+(478) (Stat Bonus) (Gold) Magic Resist Shard (√), Attack Speed Shard, Ability Haste Shard
+(479) (Stat Bonus) (Silver) Ability Haste Shard, Magic Resist Shard (√), Ability Power Shard
+(480) (Stat Bonus) (Silver) Ability Haste Shard, Critical Strike Shard, Magic Resist Shard (√)
+(481) (Stat Bonus) (Gold) Ability Power Shard, Ability Haste Shard, Health Shard (√)
+(482) (Stat Bonus) (Prismatic) Tenacity Shard, Armor Penetration Shard, Health and Size Shard (√)
+(483) (Stat Bonus) (Silver) Magic Penetration Shard, Unbreakable Shard (√), Critical Strike Shard
+(484) (Stat Bonus) (Silver) Ability Haste Shard, Lethality Shard, Armor Shard (√)
+(485) (Stat Bonus) (Prismatic) Health and Size Shard (√), Tenacity Shard, Omnivamp Shard
+(486) (Stat Bonus) (Gold) Swiftness Shard (√), Attack Speed Shard, Magic Resist Shard
+(487) (Stat Bonus) (Silver) Attack Speed Shard, Unbreakable Shard, Magic Resist Shard (√)
+(488) (Stat Bonus) (Gold) Ability Haste Shard, Attack Damage Shard, Magic Resist Shard (√)
+(489) (Stat Bonus) (Silver) Health Shard, Attack Damage Shard, Magic Penetration Shard (√)
+(490) (Stat Bonus) (Silver) Critical Strike Shard, Ability Haste Shard, Magic Penetration Shard (√)
+(491) (Stat Bonus) (Gold) Ability Haste Shard, Swiftness Shard, Lethality Shard (√)
+(492) (Stat Bonus) (Prismatic) Move Speed Shard, Omnivamp Shard, Tenacity Shard (√)
+(493) (Stat Bonus) (Silver) Health Shard, Attack Speed Shard, Magic Penetration Shard (√)
+(494) (Stat Bonus) (Gold) Critical Strike Shard, Ability Haste Shard, Swiftness Shard (√)
+(495) (Stat Bonus) (Gold) Ability Power Shard, Lethality Shard, Critical Strike Shard (√)
+(496) (Stat Bonus) (Silver) Magic Resist Shard, Critical Strike Shard, Ability Haste Shard (√)
+(497) (Stat Bonus) (Silver) Magic Resist Shard, Lethality Shard, Swiftness Shard (√)
+(498) (Stat Bonus) (Gold) Critical Strike Shard, Swiftness Shard, Ability Power Shard (√)
+(499) (Stat Bonus) (Silver) Magic Penetration Shard, Swiftness Shard, Magic Resist Shard (√)
+(500) (Stat Bonus) (Prismatic) Armor Penetration Shard, Health and Size Shard (√), Tenacity Shard
+(501) (Stat Bonus) (Gold) Attack Speed Shard, Magic Resist Shard, Swiftness Shard (√)
+(502) (Stat Bonus) (Silver) Ability Haste Shard, Armor Shard, Attack Damage Shard (√)
+(503) (Stat Bonus) (Silver) Swiftness Shard, Lethality Shard, Health Shard (√)
+(504) (Stat Bonus) (Silver) Lethality Shard, Might Shard, Swiftness Shard (√)
+(505) (Stat Bonus) (Prismatic) Tenacity Shard, Armor Penetration Shard, Omnivamp Shard (√)
+(506) (Stat Bonus) (Gold) Health Shard, Lethality Shard, Unbreakable Shard (√)
+(507) (Stat Bonus) (Gold) Ability Power Shard, Might Shard (√), Ability Haste Shard
+(508) (Stat Bonus) (Silver) Health Shard (√), Ability Power Shard, Magic Penetration Shard
+(509) (Stat Bonus) (Gold) Magic Resist Shard, Might Shard, Critical Strike Shard (√)
+(510) (Stat Bonus) (Silver) Magic Resist Shard, Unbreakable Shard, Armor Shard (√)
+(511) (Stat Bonus) (Gold) Magic Resist Shard, Critical Strike Shard, Unbreakable Shard (√)
+(512) (Stat Bonus) (Prismatic) Move Speed Shard, Heal & Shield Power Shard, Omnivamp Shard (√)
+(513) (Stat Bonus) (Gold) Unbreakable Shard, Magic Penetration Shard, Attack Speed Shard (√)
+(514) (Stat Bonus) (Silver) Magic Resist Shard, Critical Strike Shard, Armor Shard (√)
+(515) (Stat Bonus) (Silver) Armor Shard, Health Shard (√), Ability Power Shard
+(516) (Stat Bonus) (Silver) Swiftness Shard, Health Shard (√), Unbreakable Shard
+(517) (Stat Bonus) (Gold) Critical Strike Shard, Ability Power Shard, Armor Shard (√)
+(518) (Stat Bonus) (Silver) Lethality Shard, Unbreakable Shard, Armor Shard (√)
+(519) (Stat Bonus) (Silver) Swiftness Shard, Health Shard (√), Unbreakable Shard
+(520) (Stat Bonus) (Gold) Critical Strike Shard, Magic Resist Shard, Unbreakable Shard (√)
+(521) (Stat Bonus) (Prismatic) Tenacity Shard, Omnivamp Shard, Health and Size Shard (√)
+(522) (Stat Bonus) (Prismatic) Heal & Shield Power Shard, Health and Size Shard (√), Omnivamp Shard
+(523) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Resist Shard, Ability Haste Shard
+(524) (Stat Bonus) (Gold) Unbreakable Shard (√), Magic Penetration Shard, Critical Strike Shard
+(525) (Stat Bonus) (Silver) Ability Power Shard, Attack Speed Shard (√), Lethality Shard
+(526) (Stat Bonus) (Gold) Attack Speed Shard, Armor Shard, Magic Resist Shard (√)
+(527) (Stat Bonus) (Prismatic) Omnivamp Shard, Move Speed Shard, Health and Size Shard (√)
+(528) (Stat Bonus) (Silver) Lethality Shard, Swiftness Shard, Attack Speed Shard (√)
+(529) (Stat Bonus) (Prismatic) Armor Penetration Shard, Omnivamp Shard, Health and Size Shard (√)
+(530) (Stat Bonus) (Prismatic) Magic Penetration Shard, Armor Penetration Shard, Heal & Shield Power Shard (√)
+(531) (Stat Bonus) (Silver) Unbreakable Shard (√), Magic Penetration Shard, Attack Damage Shard
+(532) (Stat Bonus) (Gold) Magic Resist Shard, Unbreakable Shard (√), Ability Power Shard
+(533) (Stat Bonus) (Gold) Lethality Shard, Health Shard (√), Ability Power Shard
+(534) (Stat Bonus) (Silver) Might Shard, Lethality Shard, Unbreakable Shard (√)
+(535) (Stat Bonus) (Silver) Unbreakable Shard (√), Swiftness Shard, Lethality Shard
+(536) (Stat Bonus) (Silver) Might Shard, Magic Resist Shard, Attack Speed Shard (√)
+(537) (Stat Bonus) (Silver) Might Shard (√), Ability Haste Shard, Critical Strike Shard
+(538) (Stat Bonus) (Silver) Health Shard (√), Attack Speed Shard, Magic Penetration Shard
+(539) (Stat Bonus) (Gold) Attack Damage Shard, Health Shard (√), Lethality Shard
+(540) (Stat Bonus) (Silver) Swiftness Shard, Ability Power Shard, Unbreakable Shard (√)
+(541) (Stat Bonus) (Gold) Armor Shard, Swiftness Shard, Health Shard (√)
+(542) (Stat Bonus) (Gold) Armor Shard, Unbreakable Shard, Health Shard (√)
+(543) (Stat Bonus) (Silver) Attack Speed Shard, Swiftness Shard, Ability Power Shard (√)
+(544) (Stat Bonus) (Gold) Ability Power Shard, Health Shard (√), Swiftness Shard
+(545) (Stat Bonus) (Silver) Might Shard, Lethality Shard (√), Magic Penetration Shard
+(546) (Stat Bonus) (Gold) Swiftness Shard, Ability Haste Shard (√), Might Shard
+(547) (Stat Bonus) (Silver) Might Shard, Ability Power Shard, Armor Shard (√)
+(548) (Stat Bonus) (Silver) Swiftness Shard, Ability Power Shard, Ability Haste Shard (√)
+(549) (Stat Bonus) (Silver) Ability Power Shard, Attack Speed Shard, Attack Damage Shard (√)
+(550) (Stat Bonus) (Silver) Might Shard, Magic Penetration Shard, Attack Speed Shard (√)
+(551) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard, Ability Power Shard (√)
+(552) (Stat Bonus) (Gold) Ability Power Shard, Ability Haste Shard, Swiftness Shard (√)
+(553) (Stat Bonus) (Silver) Attack Speed Shard (√), Critical Strike Shard, Ability Power Shard
+(554) (Stat Bonus) (Silver) Armor Shard, Ability Power Shard (√), Magic Penetration Shard
+(555) (Stat Bonus) (Silver) Attack Speed Shard, Might Shard, Health Shard (√)
+(556) (Stat Bonus) (Silver) Lethality Shard, Attack Damage Shard (√), Might Shard
+(557) (Stat Bonus) (Gold) Magic Resist Shard, Swiftness Shard (√), Attack Damage Shard
+(558) (Stat Bonus) (Prismatic) Move Speed Shard, Armor Penetration Shard, Heal & Shield Power Shard (√)
+(559) (Stat Bonus) (Gold) Attack Speed Shard, Critical Strike Shard, Lethality Shard (√)
+(560) (Stat Bonus) (Silver) Ability Power Shard, Magic Penetration Shard, Might Shard (√)
+(561) (Stat Bonus) (Silver) Lethality Shard, Magic Penetration Shard, Might Shard (√)
+(562) (Stat Bonus) (Gold) Unbreakable Shard (√), Ability Power Shard, Ability Haste Shard
+(563) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard (√), Magic Penetration Shard
+(564) (Stat Bonus) (Silver) Might Shard, Magic Penetration Shard, Unbreakable Shard (√)
+(565) (Stat Bonus) (Gold) Ability Power Shard, Armor Shard, Magic Resist Shard (√)
+(566) (Stat Bonus) (Silver) Attack Damage Shard, Ability Haste Shard, Might Shard (√)
+(567) (Stat Bonus) (Silver) Magic Penetration Shard, Health Shard, Unbreakable Shard (√)
+(568) (Stat Bonus) (Gold) Might Shard, Magic Resist Shard, Ability Haste Shard (√)
+(569) (Stat Bonus) (Silver) Armor Shard, Lethality Shard, Critical Strike Shard (√)
+(570) (Stat Bonus) (Silver) Magic Resist Shard, Ability Haste Shard, Attack Damage Shard (√)
+(571) (Stat Bonus) (Silver) Magic Penetration Shard, Might Shard, Lethality Shard (√)
+(572) (Stat Bonus) (Silver) Armor Shard, Lethality Shard (√), Critical Strike Shard
+(573) (Stat Bonus) (Silver) Armor Shard, Swiftness Shard (√), Ability Power Shard
+(574) (Stat Bonus) (Silver) Critical Strike Shard, Lethality Shard (√), Magic Penetration Shard
+(575) (Stat Bonus) (Silver) Ability Power Shard, Attack Damage Shard (√), Attack Speed Shard
+(576) (Stat Bonus) (Silver) Might Shard, Magic Resist Shard, Lethality Shard (√)
+(577) (Stat Bonus) (Gold) Attack Speed Shard, Attack Damage Shard (√), Lethality Shard
+(578) (Stat Bonus) (Silver) Ability Power Shard, Attack Speed Shard (√), Swiftness Shard
+(579) (Stat Bonus) (Prismatic) Armor Penetration Shard, Magic Penetration Shard, Omnivamp Shard (√)
+(580) (Stat Bonus) (Gold) Health Shard (√), Unbreakable Shard, Critical Strike Shard
+(581) (Stat Bonus) (Silver) Ability Haste Shard, Armor Shard, Unbreakable Shard (√)
+(582) (Stat Bonus) (Gold) Swiftness Shard (√), Ability Haste Shard, Ability Power Shard
+(583) (Stat Bonus) (Gold) Health Shard (√), Attack Damage Shard, Might Shard
+(584) (Stat Bonus) (Gold) Health Shard (√), Ability Haste Shard, Attack Damage Shard
+(585) (Stat Bonus) (Prismatic) Health and Size Shard (√), Heal & Shield Power Shard, Move Speed Shard
+(586) (Stat Bonus) (Silver) Health Shard (√), Might Shard, Attack Damage Shard
+(587) (Stat Bonus) (Silver) Ability Power Shard, Magic Resist Shard, Ability Haste Shard (√)
+(588) (Stat Bonus) (Prismatic) Health and Size Shard (√), Magic Penetration Shard, Heal & Shield Power Shard
+(589) (Stat Bonus) (Prismatic) Armor Penetration Shard (√), Omnivamp Shard, Magic Penetration Shard
+(590) (Stat Bonus) (Silver) Ability Haste Shard, Might Shard (√), Magic Penetration Shard
+(591) (Stat Bonus) (Silver) Magic Resist Shard, Critical Strike Shard, Armor Shard (√)
+(592) (Stat Bonus) (Silver) Armor Shard, Attack Damage Shard (√), Critical Strike Shard
+(593) (Stat Bonus) (Silver) Lethality Shard, Might Shard (√), Ability Haste Shard
+(594) (Stat Bonus) (Silver) Magic Resist Shard, Attack Damage Shard (√), Ability Power Shard
+(595) (Stat Bonus) (Silver) Ability Power Shard, Attack Speed Shard (√), Critical Strike Shard
+(596) (Stat Bonus) (Silver) Swiftness Shard, Health Shard (√), Critical Strike Shard
+(597) (Stat Bonus) (Gold) Magic Penetration Shard, Unbreakable Shard (√), Health Shard
+(598) (Stat Bonus) (Gold) Critical Strike Shard, Swiftness Shard (√), Attack Damage Shard
+(599) (Stat Bonus) (Silver) Ability Power Shard, Critical Strike Shard (√), Ability Haste Shard
