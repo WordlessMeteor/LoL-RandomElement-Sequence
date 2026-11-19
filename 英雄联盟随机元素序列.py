@@ -1,4 +1,4 @@
-import copy, json, os, re, time, win32clipboard
+import copy, json, os, pyperclip, re, win32clipboard
 from typing import Any, Callable, Literal, NotRequired, Optional, TypedDict
 from pywintypes import HANDLEType
 
@@ -719,6 +719,90 @@ class LoLRandomElementSequence:
         self.snapshot()
         self.selections.clear()
         self.latest_selection = {"action": "", "tier": "", "selections": [], "rerolled": False, "reroll": 0, "source": ""}
+    
+    def parse(self, timeline_text: str, useInternalName: bool = False, locale: Locale = "zh_CN") -> None:
+        '''
+        从一段时间轴文本中加载随机元素时间序列信息。<br>Load random element sequence from a piece of timeline text.
+        
+        :param timeline_text: 时间轴文本。<br>Timeline text.
+        
+            示例见`export_timeline`方法。<br>See `export_timeline` method for an example.
+        :type timeline_text: str
+        :param useInternalName: 是否将随机元素的标识符识别为内部代码。默认为假。<br>Whether to identify the random element as an internal code. False by default.
+        
+            当指定该参数为真时，用户需要输入随机元素的简写。例如：AH。<br>When this parameter is specified as True, the user needs to input the abbreviation of random elements. For example: AH.
+            
+            当指定该参数为假时，用户需要输入随机元素的全称。例如：技能急速碎片。<br>When this parameter is specified as False, the user needs to input the whole name of random elements. For example: Ability Haste Shard.
+        :type useInternalName: bool
+        :param locale: 时间轴文本的语言文化代码。决定使用哪个正则表达式来识别位阶和随机元素类型。<br>Language code of the timeline text, which determines which regular expression will be used to identify tier and random element type.
+        :type locale: Literal["en_US", "zh_CN"]
+        '''
+        raise NotImplementedError("Method body not declared. Call this method in a sub-class instead.")
+    
+    def export_timeline(self, useInternalName: bool = False, useIntegerTier: bool = False, locale: Locale = "zh_CN") -> str:
+        '''
+        将随机元素时间序列导出为适用于时间轴文本文档中的字符串。<br>Export the random element sequence into a long string used in a timeline text file.
+        
+        例如：（1）（属性叠属性！）（白银阶）穿甲碎片、攻击速度碎片、生命值碎片（√）<br>For example: (1) (Stats on Stats!) (Silver) Lethality Shard, Attack Speed Shard, Health Shard (√)
+        
+        需要指出，这个方法和`parse`方法互为逆运算。<br>It's worthy of a note that this method is an inverse operation of `parse` method.
+        
+        :param useInternalName: 是否将随机元素的标识符识别为内部代码。默认为假。<br>Whether to identify the random element as an internal code. False by default.
+        
+            当指定该参数为真时，将随机元素导出为简写。例如：AH。<br>When this parameter is specified as True, random elements will be exported in abbreviated form. For example: AH.
+            
+            当指定该参数为假时，将随机元素导出为全名。例如：技能急速碎片。<br>When this parameter is specified as False, random elements will be exported into whole names. For example: Ability Haste Shard.
+        :type useInternalName: bool
+        :param useIntegerTier: 在将位阶导出为内部代码时，是否使用整数来表示。默认为假。<br>When tiers are exported into internal code, whether to represent them as integers. False by default.
+        
+            这个参数只在`useInternalName`参数指定为真时才发挥作用。<br>Only when `useInternalName` parameter is set to True will this parameter make a difference.
+        :type useIntegerTier: bool
+        :param locale: 时间轴文本的语言文化代码。<br>Language code of the timeline text.
+        :type locale: Literal["en_US", "zh_CN"]
+        :return: 随机元素时间轴字符串。<br>A random element timeline string.
+        :rtype: str
+        '''
+        raise NotImplementedError("Method body not declared. Call this method in a sub-class instead.")
+    
+    def copy_counter_PR(self, begIndex: int = 0, mode: str = "cherry", res: str = "1920x1080") -> None:
+        '''
+        将随机元素序列快照复制到剪贴板中。此时可在Premiere Pro软件的文本框中粘贴排版后的随机元素快照文本。<br>Copy a random element snapshot into clipboard. Now, users can paste the typeset random element snapshot text into the text box in Premiere Pro application.
+        
+        由于PR剪贴板的参数太过复杂，用户应当根据自身需求修改该函数的主体。可参考《属性锻造器时间序列处理》Jupyter笔记本。<br>Since parameters PR clipboard are way too complex, users should modify this function's body based on personal demands. Users may refer to "属性锻造器时间序列处理.ipynb".
+        
+        :param mode: 游戏模式。决定要导出的随机元素字段。包含以下取值：<br>Game mode, which determines the random element fields to export. It supports the following values:
+        
+            - cherry: （☆）斗魂竞技场。<br>Arena.
+            - kiwi: 海克斯大乱斗。<br>ARAM: Mayhem.
+        :type mode: Literal["cherry", "kiwi"]
+        :param begIndex: 遍历快照的起始索引。默认为0。<br>The beginning index to traverse the snapshots. 0 by default.
+        
+            当程序因异常而退出或者用户误操作时，这个参数能帮助快速进展到最新的状态。<br>When the program exits due to an exception or the user has made a mistake, this parameter is very helpful to quickly progress to the latest status.
+        :type begIndex: int
+        :param res: 视频分辨率。决定字号和制表位排版。<br>Video resolution, which determines the font size and the layout optimization strategy regarding the number of tabs.
+        
+            支持以下分辨率：<br>The following resolutions are supported:
+            - 1080P: 1920 × 1080
+            - 2K: 2560 × 1440
+        :type res: Literal["1920x1080", "2560x1440"]
+        '''
+        raise NotImplementedError("Method body not declared. Call this method in a sub-class instead.")
+
+    def export_counter(self, mode: str = "cherry") -> str:
+        '''
+        将随机元素时间序列中的各个时刻的计数导出为一张表格。<br>Export the count at each point in the random element sequence into a table.
+        
+        这个表格曾计划用于通过CompsFromSpreadsheet插件导入Adobe After Effects软件中，从而批量创建计数器快照剪辑。但是，因为该插件不支持设置复杂的文本格式，所以目前没有用到这个方法。<br>This table had intended to be exported into Adobe After Effects software by CompsFromSpreadsheet plugin to create counter snapshot clips in batches. However, because this plugin doesn't support complex text format, currently this method isn't put to use.
+        
+        :param mode: 游戏模式。决定要导出的随机元素字段。包含以下取值：<br>Game mode, which determines the random element fields to export. It supports the following values:
+        
+            - cherry: （☆）斗魂竞技场。<br>Arena.
+            - kiwi: 海克斯大乱斗。<br>ARAM: Mayhem.
+        :type mode: Literal["cherry", "kiwi"]
+        :return: 用制表位分隔的文本。<br>Text delimited by tab characters.
+        :rtype: str
+        '''
+        raise NotImplementedError("Method body not declared. Call this method in a sub-class instead.")
 
 class StatAnvilSequence(LoLRandomElementSequence):
     VALID_SILVER_TYPES: list[str] = ["AH", "AD", "AP", "Hybrid2", "AM", "MR", "Hybrid3", "HP", "AS", "Hybrid1", "CSC", "LTH", "MRPF", "Random"]
@@ -1019,28 +1103,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
         '''
         return self.increment(selection, elementId_map = self.anvilId_map)
     
-    def parse(self, timeline_text: str, useInternalName: bool = False, locale: Locale = "zh_CN", version: int = 2) -> None:
-        '''
-        从一段时间轴文本中加载属性锻造器时间序列信息。<br>Load stat anvil sequence from a piece of timeline text.
-        
-        :param timeline_text: 时间轴文本。<br>Timeline text.
-        
-            一个可用的示例见`export`方法。<br>See `export` method for an available example.
-        :type timeline_text: str
-        :param useInternalName: 是否将属性锻造器的标识符识别为内部代码。默认为假。<br>Whether to identify the stat anvil as an internal code. False by default.
-        
-            当指定该参数为真时，用户需要输入属性锻造器的简写。例如：AH。<br>When this parameter is specified as True, the user needs to input the abbreviation of stat anvils. For example: AH.
-            
-            当指定该参数为假时，用户需要输入属性锻造器的全称。例如：技能急速碎片。<br>When this parameter is specified as False, the user needs to input the whole name of stat anvils. For example: Ability Haste Shard.
-        :type useInternalName: bool
-        :param locale: 时间轴文本的语言文化代码。决定使用哪个正则表达式来识别位阶和属性锻造器类型。<br>Language code of the timeline text, which determines which regular expression will be used to identify tier and stat anvil type.
-        :type locale: Literal["en_US", "zh_CN"]
-        :param version: （已弃用）时间轴文本格式版本。<br>(Deprecated) Version of the timeline text format.
-        
-            - 1: 属性锻造器提供随机数值。此时每个属性锻造器应备注其实际取值。<br>Stat anvil grants random value. In that case, each stat anvil should have a note of its actual value.
-            - 2: 属性锻造器提供固定数值。<br>Stat anvil grants fixed value.
-        :type version: int
-        '''
+    def parse(self, timeline_text: str, useInternalName: bool = False, locale: Locale = "zh_CN") -> None:
         #准备正则表达式（Prepare regular expressions）
         _sFloat: str = r"-?\d*\.\d+"
         _sInteger: str = r"-?\d+"
@@ -1059,10 +1122,10 @@ class StatAnvilSequence(LoLRandomElementSequence):
         pRecordEN: re.Pattern[str] = re.compile(sRecordEN)
         pRecord: re.Pattern[str] = pRecordZH if locale == "zh_CN" else pRecordEN
         #准备一些对应关系，用于规范用户输入的名称的大小写（Prepare some mappings to normalize the case of names from user input）
-        tier_match_map: dict[str, str] = {value[locale]: key for key, value in self.TIER_STRINGTABLE.items()} #从位阶的本地化文本到位阶代码的映射（The reflection from tier localized text to tier code）
-        anvilSource_match_map: dict[str, str] = {value[locale]: key for key, value in self.ANVILSOURCE_STRINGTABLE.items()} #从属性锻造器来源本地化文本到来源主键的映射（The reflection from stat anvil source's localized text to source key）
-        anvilType_match_map: dict[str, str] = {value[locale]: key for key, value in self.ANVILTYPE_STRINGTABLE.items()} #从属性锻造器类型本地化文本到类型代码的映射（The reflection from stat anvil type localized text to type code）
-        ##注意到此时`anvilType_match_map`键中含有“固定法术穿透碎片”和“百分比法术穿透碎片”两个键。这样的话，当用户输入这两个字符串作为属性锻造器的名称时，程序可以正确地将其转化为相应的锻造器代码（Note that here "Fixed Magic Penetration Shard" and "Percentage Magic Penetration Shard" exist in `anvilType_match_map`. In that case, when the user inputs these two strings as the stat anvil's name, the program can correctly transform it into the correponding anvilId）
+        TIER_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.TIER_STRINGTABLE.items()} #从位阶的本地化文本到位阶代码的映射（The reflection from tier localized text to tier code）
+        ANVILSOURCE_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.ANVILSOURCE_STRINGTABLE.items()} #从属性锻造器来源本地化文本到来源主键的映射（The reflection from stat anvil source's localized text to source key）
+        ANVILTYPE_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.ANVILTYPE_STRINGTABLE.items()} #从属性锻造器类型本地化文本到类型代码的映射（The reflection from stat anvil type localized text to type code）
+        ##注意到此时`ANVILTYPE_MATCH_MAP`键中含有“固定法术穿透碎片”和“百分比法术穿透碎片”两个键。这样的话，当用户输入这两个字符串作为属性锻造器的名称时，程序可以正确地将其转化为相应的锻造器代码（Note that here "Fixed Magic Penetration Shard" and "Percentage Magic Penetration Shard" exist in `ANVILTYPE_MATCH_MAP`. In that case, when the user inputs these two strings as the stat anvil's name, the program can correctly transform it into the correponding anvilId）
         #判断属性锻造器标识合法性（Judge the validity of the stat anvil identifier）
         def isValidAnvilTier(anvil_tier: str) -> bool:
             '''
@@ -1073,7 +1136,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的来源的有效性。<br>Validity of the stat anvil's source.
             :rtype: bool
             '''
-            return useInternalName and (anvil_tier.isdigit() and int(anvil_tier) in self.VALID_TIERS_INT or anvil_tier.lower() in self.TIER_CASE_MAP) or not useInternalName and anvil_tier in tier_match_map
+            return useInternalName and (anvil_tier.isdigit() and int(anvil_tier) in self.VALID_TIERS_INT or anvil_tier.lower() in self.TIER_CASE_MAP) or not useInternalName and anvil_tier in TIER_MATCH_MAP
         
         def isValidAnvilSource(anvil_source: str) -> bool:
             '''
@@ -1084,7 +1147,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的来源的有效性。<br>Validity of the stat anvil's source.
             :rtype: bool
             '''
-            return useInternalName and anvil_source.lower() in self.ANVILSOURCE_CASE_MAP or not useInternalName and anvil_source in anvilSource_match_map
+            return useInternalName and anvil_source.lower() in self.ANVILSOURCE_CASE_MAP or not useInternalName and anvil_source in ANVILSOURCE_MATCH_MAP
         
         def isValidAnvilName(anvil_name: str) -> bool:
             '''
@@ -1095,7 +1158,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的名称的有效性。<br>Validity of the stat anvil's name.
             :rtype: bool
             '''
-            return useInternalName and (anvil_name == "MRP" or anvil_name.lower() in self.ANVILTYPE_CASE_MAP) or not useInternalName and (anvil_name in anvilType_match_map or locale == "en_US" and anvil_name == "Magic Penetration Shard" or locale == "zh_CN" and anvil_name == "法术穿透碎片") #固定法术穿透碎片和百分比法术穿透碎片的名字都是“法术穿透碎片”。必须要处理这一个特例（Both Fixed Magic Penetration Shard and Percentage Magic Penetration Shard use the name "Magic Penetration Shard". This special case must be discussed individually）
+            return useInternalName and (anvil_name == "MRP" or anvil_name.lower() in self.ANVILTYPE_CASE_MAP) or not useInternalName and (anvil_name in ANVILTYPE_MATCH_MAP or locale == "en_US" and anvil_name == "Magic Penetration Shard" or locale == "zh_CN" and anvil_name == "法术穿透碎片") #固定法术穿透碎片和百分比法术穿透碎片的名字都是“法术穿透碎片”。必须要处理这一个特例（Both Fixed Magic Penetration Shard and Percentage Magic Penetration Shard use the name "Magic Penetration Shard". This special case must be discussed individually）
         #词法分析（Parse）
         selections: list[Selection] = []
         recordLines: list[str] = timeline_text.splitlines()
@@ -1117,7 +1180,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                         else:
                             tier = self.TIER_CASE_MAP[rarity.lower()]
                     else:
-                        tier = tier_match_map[rarity]
+                        tier = TIER_MATCH_MAP[rarity]
                     #选项（Options）
                     options_supply: list[Option] = []
                     options_select: list[Option] = []
@@ -1132,7 +1195,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                             if anvil_name in {"法术穿透碎片", "Magic Penetration Shard"}:
                                 anvil_id = "MRPP" if tier == "Prismatic" else "MRPF"
                             else:
-                                anvil_id = anvilType_match_map[anvil_name]
+                                anvil_id = ANVILTYPE_MATCH_MAP[anvil_name]
                         option_supply: Option = {"id": anvil_id}
                         option_select: Option = {"id": anvil_id}
                         #已选择状态（Picked status）
@@ -1149,7 +1212,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                     if useInternalName:
                         sourceKey: str = self.ANVILSOURCE_CASE_MAP[source.lower()]
                     else:
-                        sourceKey = anvilSource_match_map[source]
+                        sourceKey = ANVILSOURCE_MATCH_MAP[source]
                     #赋值（Assignment）
                     selection_supply: Selection = {
                         "action": "supply",
@@ -1178,34 +1241,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                         print(f"第{i + 1}行来源不正确。\nIncorrect source in Line {i + 1}.")
         self.extend(selections, elementId_map = None)
     
-    def export_timeline(self, useInternalName: bool = False, useIntegerTier: bool = False, locale: Locale = "zh_CN", version: int = 2) -> str:
-        '''
-        将属性锻造器时间序列导出为适用于时间轴文本文档中的字符串。<br>Export the stat anvil sequence into a long string used in a timeline text file.
-        
-        例如：（1）（属性叠属性！）（白银阶）穿甲碎片、攻击速度碎片、生命值碎片（√）<br>For example: (1) (Stats on Stats!) (Silver) Lethality Shard, Attack Speed Shard, Health Shard (√)
-        
-        需要指出，这个方法和`parse`方法互为逆运算。<br>It's worthy of a note that this method is an inverse operation of `parse` method.
-        
-        :param useInternalName: 是否将属性锻造器的标识符识别为内部代码。默认为假。<br>Whether to identify the stat anvil as an internal code. False by default.
-        
-            当指定该参数为真时，将属性锻造器导出为简写。例如：AH。<br>When this parameter is specified as True, stat anvils will be exported in abbreviated form. For example: AH.
-            
-            当指定该参数为假时，将属性锻造器导出为全名。例如：技能急速碎片。<br>When this parameter is specified as False, stat anvils will be exported into whole names. For example: Ability Haste Shard.
-        :type useInternalName: bool
-        :param useIntegerTier: 在将位阶导出为内部代码时，是否使用整数来表示。默认为假。<br>When tiers are exported into internal code, whether to represent them as integers. False by default.
-        
-            这个参数只在`useInternalName`参数指定为真时才发挥作用。<br>Only when `useInternalName` parameter is set to True will this parameter make a difference.
-        :type useIntegerTier: bool
-        :param locale: 时间轴文本的语言文化代码。<br>Language code of the timeline text.
-        :type locale: Literal["en_US", "zh_CN"]
-        :param version: （已弃用）时间轴文本格式版本。<br>(Deprecated) Version of the timeline text format.
-        
-            - 1: 属性锻造器提供随机数值。此时每个属性锻造器应备注其实际取值。<br>Stat anvil grants random value. In that case, each stat anvil should have a note of its actual value.
-            - 2: 属性锻造器提供固定数值。<br>Stat anvil grants fixed value.
-        :type version: int
-        :return: 属性锻造器时间轴字符串。<br>A stat anvil timeline string.
-        :rtype: str
-        '''
+    def export_timeline(self, useInternalName: bool = False, useIntegerTier: bool = False, locale: Locale = "zh_CN") -> str:
         PICKED_SYMBOL: str = "（√）" if locale == "zh_CN" else " (√)"
         TIER_MAP: dict[str, int] = {value: key for key, value in self.TIER_MAP.items()} #交换位阶映射的键值对（Exchange the keys and values of tier mapping）
         result: str = "" #初始化结果字符串（Initialize the result string）
@@ -1517,27 +1553,6 @@ class StatAnvilSequence(LoLRandomElementSequence):
         return (anvilTable, formatArray, style_runLengthArray)
     
     def copy_counter_PR(self, begIndex: int = 0, mode: str = "cherry", res: str = "1920x1080") -> None:
-        '''
-        将属性锻造器序列快照复制到剪贴板中。此时可在Premiere Pro软件的文本框中粘贴排版后的属性锻造器快照文本。<br>Copy a stat anvil snapshot into clipboard. Now, users can paste the typeset stat anvil snapshot text into the text box in Premiere Pro application.
-        
-        由于PR剪贴板的参数太过复杂，用户应当根据自身需求修改该函数的主体。可参考《属性锻造器时间序列处理》Jupyter笔记本。<br>Since parameters PR clipboard are way too complex, users should modify this function's body based on personal demands. Users may refer to "属性锻造器时间序列处理.ipynb".
-        
-        :param mode: 游戏模式。决定要导出的属性锻造器字段。包含以下取值：<br>Game mode, which determines the stat anvil fields to export. It supports the following values:
-        
-            - cherry: （☆）斗魂竞技场。<br>Arena.
-            - kiwi: 海克斯大乱斗。<br>ARAM: Mayhem.
-        :type mode: Literal["cherry", "kiwi"]
-        :param begIndex: 遍历快照的起始索引。默认为0。<br>The beginning index to traverse the snapshots. 0 by default.
-        
-            当程序因异常而退出或者用户误操作时，这个参数能帮助快速进展到最新的状态。<br>When the program exits due to an exception or the user has made a mistake, this parameter is very helpful to quickly progress to the latest status.
-        :type begIndex: int
-        :param res: 视频分辨率。决定字号和制表位排版。<br>Video resolution, which determines the font size and the layout optimization strategy regarding the number of tabs.
-        
-            支持以下分辨率：<br>The following resolutions are supported:
-            - 1080P: 1920 × 1080
-            - 2K: 2560 × 1440
-        :type res: Literal["1920x1080", "2560x1440"]
-        '''
         #参数预处理（Parameter preprocessing）
         if res != "2560x1440":
             res = "1920x1080"
@@ -2286,19 +2301,6 @@ class StatAnvilSequence(LoLRandomElementSequence):
                 break
     
     def export_counter(self, mode: str = "cherry") -> str:
-        '''
-        将属性锻造器时间序列中的各个时刻的计数导出为一张表格。<br>Export the count at each point in the stat anvil sequence into a table.
-        
-        这个表格曾计划用于通过CompsFromSpreadsheet插件导入Adobe After Effects软件中，从而批量创建计数器快照剪辑。但是，因为该插件不支持设置复杂的文本格式，所以目前没有用到这个方法。<br>This table had intended to be exported into Adobe After Effects software by CompsFromSpreadsheet plugin to create counter snapshot clips in batches. However, because this plugin doesn't support complex text format, currently this method isn't put to use.
-        
-        :param mode: 游戏模式。决定要导出的属性锻造器字段。包含以下取值：<br>Game mode, which determines the stat anvil fields to export. It supports the following values:
-        
-            - cherry: （☆）斗魂竞技场。<br>Arena.
-            - kiwi: 海克斯大乱斗。<br>ARAM: Mayhem.
-        :type mode: Literal["cherry", "kiwi"]
-        :return: 用制表位分隔的文本。<br>Text delimited by tab characters.
-        :rtype: str
-        '''
         #准备表头相关常量（Prepare header related constants）
         if mode == "kiwi":
             anvilTypes_silver: list[str] = ["AH", "AD", "AP", "Hybrid2", "AM", "MR", "Hybrid3", "HP", "AS", "Hybrid1", "CSC", "LTH", "MRPF"]
@@ -2310,7 +2312,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             anvilTypes_prismatic = self.VALID_PRISMATIC_TYPES
         anvilTypes: dict[str, list[str]] = {"Silver": anvilTypes_silver, "Gold": anvilTypes_gold, "Prismatic": anvilTypes_prismatic}
         #确定表头顺序（Determine the order of the headers）
-        counters: dict[str, list[Any]] = {"index": [0], "action": [""], "silver_total": [0], "gold_total": [0], "prismatic_total": [0]}
+        counters: dict[str, list[Any]] = {"index": [0], "action": ["initial"], "silver_total": [0], "gold_total": [0], "prismatic_total": [0]}
         for tier, anvilTypes_tier in anvilTypes.items():
             for anvilType in anvilTypes_tier:
                 key_supply: str = "%s_%s_supplied" %(tier.lower(), anvilType.lower())
@@ -2337,123 +2339,600 @@ class StatAnvilSequence(LoLRandomElementSequence):
         result: str = "\t".join(list(counters.keys())) + "\n" + "\n".join(["\t".join([str(counters[key][i]) for key in counters]) for i in range(self.snapshot_count)])
         return result
 
-def main() -> int:
-    '''
-    主函数。在运行此脚本时执行此函数。<br>Main function, called when this program is run.
+#第三部分：主程序（Part 3: Main program）
+class SequenceCLI:
+    #定义一些用于汇总输出各属性的字符串常量池（Define some stringtables used to summarize and output each attributes）
+    ELEMENTTYPE_STRINGTABLE: Stringtable = {
+        "": {
+            "en_US": "",
+            "zh_CN": ""
+        },
+        "statanvil": {
+            "en_US": "Stat anvil",
+            "zh_CN": "属性锻造器"
+        },
+        "augment": {
+            "en_US": "Augment",
+            "zh_CN": "强化符文"
+        }
+    }
+    LOCALE_STRINGTABLE: Stringtable = {
+        "en_US": {
+            "en_US": "English (US)",
+            "zh_CN": "英语（美国）"
+        },
+        "zh_CN": {
+            "en_US": "Chinese (China)",
+            "zh_CN": "中文（中国）"
+        }
+    }
     
-    :return: 状态码。<br>Status code.
+    def __init__(self) -> None:
+        '''
+        用户交互类的构造函数。<br>Constructor of `SequenceCLI` class.
+        
+        该类主要用于管理用户输入。<br>This class is mainly designed for managing user input.
+        '''
+        #初始化一些随机元素序列对象（Initialize some random element sequence objects）
+        self.anvilSeq: StatAnvilSequence = StatAnvilSequence() #属性锻造器时间序列对象（A `StatAnvilSequence` object）
+        self.sequence: LoLRandomElementSequence = LoLRandomElementSequence() #实际操作的随机元素序列对象（Random element sequence object that the program practically works with）
+        #初始化用户操作过程中全局可用的一些配置变量（Initialize some config variables that remain visible during the user's operations）
+        self.elementType: str = "" #随机元素类型（Random element type）
+        self._elementType_specified: bool = False #标识随机元素类型是否指定过。只影响设置随机元素类型时选项“0”的提示（Marks whether the random element type has been specified. It only influences the prompt of "0" option in `set_elementType` method）
+        self.useInternalName_import: bool = False #是否在读取时间轴文本时使用随机元素的内部名称（Whether to use the internal name when reading timeline text）
+        self.useInternalName_export: bool = False #是否在导出时间轴文本时使用随机元素的内部名称（Whether to use the internal name when exporting timeline text）
+        # self.useIntegerTier_import: bool = False #是否在读取时间轴文本时使用整数位阶。由于词法分析方法已经能够支持处理整数类型的位阶，所以不需要设置这个属性（Whether to use integer tier when reading timeline text. Since the `parse` method of any sub-class of `LoLRandomElementSequence` class can already handle the integer tier, there's no need for this attribute to exist）
+        self.useIntegerTier_export: bool = False #是否在导出时间轴文本时使用整数位阶。仅在`useInternalName_export`属性为真时有作用（Whether to use integer tiers when exporting timeline text. Only when `useInternalName_export` attribute is True does this attribute makes a difference）
+        self.locale_import: Locale = "zh_CN" #读取时间轴文本时使用的语言（The language used when reading timeline text）
+        self.locale_export: Locale = "zh_CN" #导出时间轴文本时使用的语言（The language used when exporting timeline text）
+        self.copyOnExport: bool = False #是否在导出时间轴文本或者计数器快照表格的同时将其复制到剪贴板（Whether to copy the timeline text or counter snapshot table to the clipboard while exporting it）
     
-        - 0: 如期运行。<br>Run as expected.
-        - 1: 剪贴板格式缺失。<br>Missing clipboard formats.
-    :rtype: int
-    '''
-    anvilSeq: StatAnvilSequence = StatAnvilSequence() #初始化属性锻造器时间序列对象（Initialize a `StatAnvilSequence` object）
-    #检查剪贴板格式（Check clipboard formats）
-    missing_clipboard_formats: list[str] = [_ for _ in REQUIRED_CLIPBOARD_FORMATS_PR if not _ in clipboard_formats]
-    if len(missing_clipboard_formats) > 0:
-        print("剪贴板数据格式不符。请确保您在运行程序前复制了某个PR文本框中的一段文字。\nClipboard format mismatched. Please make sure you've copied some text in a PR textbox before running this program.")
-        print("当前系统剪贴板窗口缺失以下格式：\nThe following formats are missing from the current system clipboard window:")
-        # print(json.dumps(missing_clipboard_formats, ensure_ascii = False))
-        for missing_clipboard_format in missing_clipboard_formats:
-            print(f"- {missing_clipboard_format}")
-        print("请打开Adobe Premiere Pro软件，在一个序列中创建一个文本框，输入一些文字之后复制该文本框中的文字，再运行本程序。\nPlease open Adobe Premiere Pro software, create a text box in a sequence, input some text into it, then copy the text and finally restart this program.\n\n程序即将退出。\nThe program will exit soon.")
-        time.sleep(3)
-        return 1
-    #设置参数（Set parameters）
-    step: int = 1 #步骤（Step）
-    mode: str = "cherry" #属性锻造器的模式。决定呈现哪些属性锻造器的数量（The mode that stat anvils belong to, which determines the number of which types of stat anvils will be displayed）
-    begIndex: int = 0 #复制和导出的起始快照的下标（The index of the snapshot to begin to copy and export）
-    res: str = "1920x1080" #视频分辨率，决定复制到Premiere Pro的文本框中的文本的字号和制表位排版（Video resolution, which determines the font size and typesetting regarding tabs of the text to be copied into a text box in Premiere Pro）
-    while True:
-        if step == 0:
-            break
-        elif step == 1:
-            print("第一步：请输入一个属性锻造器时间序列Json文件的路径。\nStep 1: Please input the path of a json file of stat anvil sequence.")
-            while True:
-                file_path: str = input()
-                if file_path == "":
-                    continue
-                elif file_path == "0":
-                    step -= 2
-                elif not os.path.exists(file_path):
-                    print("路径不存在。请重新输入。\nPath not found. Please try again.")
-                elif not os.path.isfile(file_path):
-                    print("请输入一个文件的路径。\nPlease input the path of a file.")
+    def summarize_settings(self) -> None:
+        '''
+        汇总设置相关实例属性并输出。<br>Summarize settings related instance attributes and output them.
+        '''
+        print("当前操作的随机元素类型：%s。\nCurrently selected random element type: %s."%(self.ELEMENTTYPE_STRINGTABLE[self.elementType]["zh_CN"], self.ELEMENTTYPE_STRINGTABLE[self.elementType]["en_US"]))
+        ANVIL_NAME_TYPE_ZH: str = "元素代码" if self.useInternalName_import else "本地化名称"
+        ANVIL_NAME_TYPE_EN: str = "element ids" if self.useInternalName_import else "localized names"
+        print("程序读取用%s和%s语言撰写的时间轴文本。\nThe program reads timeline text written with %s in %s." %(ANVIL_NAME_TYPE_ZH, self.LOCALE_STRINGTABLE[self.locale_import]["zh_CN"], ANVIL_NAME_TYPE_EN, self.LOCALE_STRINGTABLE[self.locale_import]["en_US"]))
+        ANVIL_TIER_COMBO_TYPE_ZH: str = "本地化名称" if not self.useInternalName_export else "元素代码、整数类型的位阶" if self.useIntegerTier_export else "元素代码、字符串类型的位阶"
+        ANVIL_TIER_COMBO_TYPE_EN: str = "localized names" if not self.useInternalName_export else "element ids and integer tiers" if self.useIntegerTier_export else "element ids and string tiers"
+        print("程序以%s和%s语言输出时间轴文本。\nThe program outputs timeline text written with %s in %s." %(ANVIL_TIER_COMBO_TYPE_ZH, self.LOCALE_STRINGTABLE[self.locale_export]["zh_CN"], ANVIL_TIER_COMBO_TYPE_EN, self.LOCALE_STRINGTABLE[self.locale_export]["en_US"]))
+        if self.copyOnExport:
+            print("程序将在输出时间轴文本和计数器快照表格的同时将其复制到剪贴板。\nThe program will copy the timeline text and counter snapshot table to clipboard while outputting them.")
+        else:
+            print("程序在打印时间轴文本和计数器快照表格时不会将其复制到剪贴板。\nThe program will print the timeline text and counter snapshot table but not copy them to the clipboard.")
+    
+    def set_elementType(self) -> bool:
+        '''
+        设置随机元素类型。<br>Set the random element type.
+        
+        决定要操作的时间序列对象类型。<br>Determine the type of sequence object to manipulate.
+        
+        :return: 操作是否完成。<br>Whether the operation is finished.
+        :rtype: bool
+        '''
+        finished: bool = False
+        print("请选择您想要操作的随机元素类型：\nPlease select a type of the random element you want to work with:\n0\t%s\n☆1\t属性锻造器（Stat anvil）\n!2\t强化符文（Augment）" %("返回上一层（Return to the last step）" if self._elementType_specified else "退出（Exit）"))
+        while True:
+            elementType_str: str = input()
+            if elementType_str == "":
+                elementType_str = "1"
+            if elementType_str[0] == "0":
+                break
+            elif elementType_str[0] == "1":
+                self.elementType = "statanvil"
+                self.sequence = self.anvilSeq
+                finished = True
+                self._elementType_specified = True
+                break
+            elif elementType_str[0] == "2":
+                print("强化符文时间序列类正在建设中。请等待后续更新。\n`AugmentSequence` class is under construction. Please wait for future updates.")
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+        return finished
+    
+    def set_copyOnExport(self) -> None:
+        '''
+        设置是否在导出时间轴文本或者计数器快照表格的同时将其复制到剪贴板。<br>Set whether to copy the timeline text or the counter snapshot table to the clipboard while exporting it.
+        '''
+        if self.copyOnExport:
+            print("程序将在导出时间轴文本或者计数器快照表格的同时将其复制到剪贴板。是否更改为仅导出而不复制？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will copy the timeline text or the counter snapshot table to the clipboard while exporting them. Do you want to change it to export without copying? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        else:
+            print("程序将在导出时间轴文本或者计数器快照表格的同时不将其复制到剪贴板。是否更改为导出且复制？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program won't copy the timeline text or the counter snapshot table to the clipboard while exporting them. Do you want to change it to both export and copy? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        confirm: bool = bool(input())
+        if confirm:
+            self.copyOnExport = not self.copyOnExport
+            if self.copyOnExport:
+                print("已更改为导出且复制。\nChanged to both export and copy.")
+            else:
+                print("已更改为仅导出而不复制。\nChanged to export but not copy.")
+    
+    def set_useInternalName_import(self) -> None:
+        '''
+        设置导入时间轴文本时，识别本地化名称还是内部代码。<br>Set whether to identify the localized name or internal id when importing timeline text.
+        '''
+        if self.useInternalName_import:
+            print("程序将识别时间轴中的元素代码。是否更改为识别本地化名称？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will identify the element ids in the timeline. Do you want to change it so that the program will identify the localized names instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        else:
+            print("程序将识别时间轴中的本地化名称。是否更改为识别元素代码？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will identify the localized names in the timeline. Do you want to change it so that the program will identify the element ids instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        confirm: bool = bool(input())
+        if confirm:
+            self.useInternalName_import = not self.useInternalName_import
+            if self.useInternalName_import:
+                print("已更改为识别元素代码。\nChanged to identifying element ids.")
+            else:
+                print("已更改为识别本地化名称。\nChanged to identifying localized names.")
+    
+    def set_useInternalName_export(self) -> None:
+        '''
+        设置导出时间轴文本时，输出随机元素的本地化名称还是内部代码。<br>Set whether to output the localized names or internal ids of random elements when exporting timeline text.
+        '''
+        if self.useInternalName_export:
+            print("程序将使用元素代码导出时间轴中的随机元素。是否更改为本地化名称？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will output the random elements as element ids in the timeline. Do you want to change it so that the program will output the localized names instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        else:
+            print("程序将使用本地化名称导出时间轴中的随机元素。是否更改为元素代码？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will output the random elements as localized names in the timeline. Do you want to change it so that the program will output the element ids instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+        confirm: bool = bool(input())
+        if confirm:
+            self.useInternalName_export = not self.useInternalName_export
+            if self.useInternalName_export:
+                print("已更改为导出元素代码。\nChanged to exporting element ids.")
+            else:
+                print("已更改为导出本地化名称。\nChanged to exporting localized names.")
+    
+    def set_useIntegerTier_export(self) -> None:
+        '''
+        设置导出时间轴文本时，在导出随机元素的内部代码的前提下，导出位阶的字符串还是整数表示。<br>When the program will export timeline text and internal ids of random elements will be used for export, whether to export the string or integer representation of tiers.
+        '''
+        if self.useInternalName_export:
+            if self.useIntegerTier_export:
+                print("程序将以整数形式导出位阶信息。是否更改为以字符串形式导出？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will output tier information in integer form. Do you want to change it so that the program will output it in string form instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+            else:
+                print("程序将以字符串形式导出位阶信息。是否更改为以整数形式导出？（输入任意非空字符串以更改策略，否则取消操作。）\nThe program will output tier information in string form. Do you want to change it so that the program will output it in integer form instead? (Submit any non-empty string to change it, or null to cancel the operation.)")
+            confirm: bool = bool(input())
+            if confirm:
+                self.useIntegerTier_export = not self.useIntegerTier_export
+                if self.useIntegerTier_export:
+                    print("已更改为以整数形式导出。\nChanged to exporting in integer form.")
                 else:
-                    try:
-                        with open(file_path, "r", encoding = "utf-8") as fp:
-                            records: list[Selection] = json.load(fp)
-                    except json.JSONDecodeError:
-                        print("选择序列文件格式错误。请尝试输入另一个文件。\nSelection sequence format mismatch. Please try another file.")
+                    print("已更改为以字符串形式导出。\nChanged to exporting in string form.")
+        else:
+            print("当前设置项不可用。\nThe current settings option isn't available.")
+    
+    def set_locale(self, direction: str) -> bool:
+        '''
+        设置读取时间轴文本的语言。<br>Set the language for timeline text received.
+        
+        :param direction: 时间轴文本传输方向。<br>Transmiss direction of timeline text.
+        
+            - in: 读取时间轴文本。<br>Read timeline text.
+            - out: 导出时间轴文本。<br>Export timeline text.
+        :type direction: Literal["in", "out"]
+        :return: 操作是否完成。<br>Whether the operation is finished.
+        :rtype: bool
+        '''
+        finished: bool = False
+        DIRECTION_DESC_ZH: str = "读取" if direction == "in" else "导出"
+        DIRECTION_DESC_EN: str = "read" if direction == "in" else "export"
+        print(f"请选择将要{DIRECTION_DESC_ZH}的时间轴文本的语言：\nPlease select a language for the timeline text to {DIRECTION_DESC_EN}:\n1\t中文（中国）【Chinese (China)】\n2\t英语（美国）【English (US)】")
+        while True:
+            option: str = input()
+            if option == "":
+                continue
+            elif option[0] == "0":
+                break
+            elif option[0] == "1":
+                if direction == "in":
+                    self.locale_import = "zh_CN"
+                else:
+                    self.locale_export = "zh_CN"
+                print(f"程序将{DIRECTION_DESC_ZH}中文（中国）的时间轴文本。\nThe program will {DIRECTION_DESC_EN} timeline text in Chinese (China).")
+                finished = True
+                break
+            elif option[0] == "2":
+                if direction == "in":
+                    self.locale_import = "en_US"
+                else:
+                    self.locale_export = "en_US"
+                print(f"程序将{DIRECTION_DESC_ZH}英语（美国）的时间轴文本。\nThe program will {DIRECTION_DESC_EN} timeline text in English (US).")
+                finished = True
+                break
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+        return finished
+    
+    def settings_main(self) -> None:
+        '''
+        修改对象属性的入口。<br>Entrance to changing the object attributes.
+        '''
+        print("请选择一项设置：\nPlease select an option:\n0\t返回上一层（Return to the last step）\n1\t切换随机元素类型（Switch random element type）\n2\t导出复制策略（Export-copy strategy）\n3\t名称识别策略（Name identification strategy）\n4\t名称导出策略（Name export strategy）\n%s5\t位阶导出策略（Tier export strategy）\n6\t输入语言（Input language）\n7\t输出语言（Output language）" %("" if self.useInternalName_export else "!"))
+        while True:
+            option: str = input()
+            if option == "":
+                continue
+            elif option[0] == "0":
+                break
+            elif option[0] == "1":
+                self.set_elementType()
+            elif option[0] == "2":
+                self.set_copyOnExport()
+            elif option[0] == "3":
+                self.set_useInternalName_import()
+            elif option[0] == "4":
+                self.set_useInternalName_export()
+            elif option[0] == "5":
+                self.set_useIntegerTier_export()
+            elif option[0] == "6":
+                self.set_locale("in")
+            elif option[0] == "7":
+                self.set_locale("out")
+            else:
+                print("未找到设置项。请重新输入。\nSettings option not found. Please try again.")
+                continue
+            print("请选择一项设置：\nPlease select an option:\n0\t返回上一层（Return to the last step）\n1\t切换随机元素类型（Switch random element type）\n2\t导出复制策略（Export-copy strategy）\n3\t名称识别策略（Name identification strategy）\n4\t名称导出策略（Name export strategy）\n%s5\t位阶导出策略（Tier export strategy）\n6\t输入语言（Input language）\n7\t输出语言（Output language）" %("" if self.useInternalName_export else "!"))
+    
+    def add_selection_linewise(self) -> None:
+        '''
+        逐行导入选择界面。<br>Import selection screens line by line.
+        '''
+        print('请逐行输入选择行为的时间轴文本。输入“0”以结束输入。\nPlease input the timeline text of the seletion behaviors line by line. Submit "0" to cancel the input.')
+        while True:
+            timeline_text: str = input()
+            if timeline_text == "":
+                continue
+            elif timeline_text == "0":
+                break
+            else:
+                selection_count_old: int = self.sequence.selection_count
+                self.sequence.parse(timeline_text, useInternalName = self.useInternalName_import, locale = self.locale_import)
+                selection_count_new: int = self.sequence.selection_count
+                if selection_count_new == selection_count_old:
+                    print("导入失败。请检查报错信息。\nImport failed. Please check the error message.")
+                else:
+                    print("导入成功。\nImport succeeded.")
+    
+    def add_selection_filewise(self) -> None:
+        '''
+        从文件读取选择行为序列。<br>Read selection behavior sequence from a file.
+        '''
+        data_format: str = "" #要导入的数据的格式（Format of the data to import）
+        step: int = 1
+        while True:
+            if step == 0:
+                break
+            elif step == 1: #设置要读取的数据的格式（Set the format of the data to read）
+                print("请选择要导入的选择行为数据文件的格式：\nPlease select a format of the selection behavior data file to read:\n1\t时间轴文本（Timeline text）\n2\tJson")
+                while True:
+                    data_format_str: str = input()
+                    if data_format_str == "":
+                        continue
+                    elif data_format_str[0] == "0":
+                        step -= 2
+                        break
+                    elif data_format_str[0] == "1":
+                        data_format = "timeline"
+                        break
+                    elif data_format_str[0] == "2":
+                        data_format = "json"
+                        break
                     else:
-                        status: int = anvilSeq.extend(records)
-                        if status == 0:
-                            break
-        elif step == 2:
-            print("第二步：请选择一个游戏模式。\nStep 2: Please select a game mode.\n1\t斗魂竞技场（Arena）\n☆2\t海克斯大乱斗（ARAM: Mayhem）")
-            while True:
-                mode_option: str = input()
-                if mode_option == "":
-                    mode_option = "2"
-                if mode_option[0] == "0":
-                    step -= 2
-                    break
-                elif mode_option[0] == "1":
-                    mode = "cherry"
-                    break
-                elif mode_option[0] == "2":
-                    mode = "kiwi"
-                    break
+                        print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+            elif step == 2: #读取文件（Read the file）
+                if self.elementType == "statanvil":
+                    elementType_desc_zh: str = "属性锻造器"
+                    elementType_desc_en: str = "stat anvil"
                 else:
-                    print("您的输入有误！请重新输入。\nERROR input! Please try again.")
-        elif step == 3:
-            print("第三步：请设置开始复制和导出快照的序号。\nPlease set the index of the snapshot to start to copy and export.")
-            print("取值范围（Range）：[%d, %d]" %(-anvilSeq.snapshot_count, anvilSeq.snapshot_count - 1))
-            print('输入空字符串以从头开始。输入“0”以返回上一步。\nEnter nothing to start from the beginning. Submit "0" to return to the last step.')
+                    elementType_desc_zh = "强化符文"
+                    elementType_desc_en = "augment"
+                if data_format == "timeline":
+                    data_format_desc_zh: str = "时间轴"
+                    data_format_desc_en: str = "timeline"
+                else:
+                    data_format_desc_zh = "Json"
+                    data_format_desc_en = "json"
+                print(f"请输入一个{elementType_desc_zh}选择行为序列{data_format_desc_zh}文件的路径。\nPlease input the path of a {data_format_desc_en} file of {elementType_desc_en} sequence.")
+                while True:
+                    file_path: str = input()
+                    if file_path == "":
+                        continue
+                    elif file_path == "0":
+                        step -= 2
+                        break
+                    elif not os.path.exists(file_path):
+                        print("路径不存在。请重新输入。\nPath not found. Please try again.")
+                    elif not os.path.isfile(file_path):
+                        print("请输入一个文件的路径。\nPlease input the path of a file.")
+                    else:
+                        if data_format == "timeline":
+                            with open(file_path, "r", encoding = "utf-8") as fp:
+                                timeline_text: str = fp.read()
+                            selection_count_old = self.sequence.selection_count
+                            self.sequence.parse(timeline_text, useInternalName = self.useInternalName_import, locale = self.locale_import)
+                            selection_count_new = self.sequence.selection_count
+                            selection_count_delta: int = selection_count_new - selection_count_old
+                            print("已导入%d条选择行为。\nImported %d selection behavior%s." %(selection_count_delta, selection_count_delta, "s" if selection_count_delta > 1 else ""))
+                            break
+                        else:
+                            try:
+                                with open(file_path, "r", encoding = "utf-8") as fp:
+                                    records: list[Selection] = json.load(fp)
+                            except json.JSONDecodeError:
+                                print("选择行为序列文件格式错误。请尝试输入另一个文件。\nSelection behavior sequence format mismatch. Please try another file.")
+                            else:
+                                selection_count_old = self.sequence.selection_count
+                                status: int = self.sequence.extend(records)
+                                selection_count_new = self.sequence.selection_count
+                                selection_count_delta = selection_count_new - selection_count_old
+                                if status == 0:
+                                    print("已导入%d条选择行为。\nImported %d selection behavior%s." %(selection_count_delta, selection_count_delta, "s" if selection_count_delta > 1 else ""))
+                                    break
+                                else:
+                                    print("请重新输入。\nPlease try again.")
+            elif step == 3:
+                break
+            else:
+                print("步骤异常。请联系开发人员修复程序。\nStep error. Please contact the developer to fix the program.")
+                break
+            step += 1
+    
+    def add_selection_main(self) -> None:
+        '''
+        添加选择行为操作的入口。<br>Entrance to adding selection behaviors.
+        '''
+        print("请选择添加方式：\nPlease select a method:\n1\t逐行添加（Line by line）\n2\t来自文件（From file）")
+        while True:
+            method: str = input()
+            if method == "":
+                continue
+            elif method[0] == "0":
+                break
+            elif method[0] == "1":
+                self.add_selection_linewise()
+                break
+            elif method[0] == "2":
+                self.add_selection_filewise()
+                break
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+    
+    def revert_selection(self) -> None:
+        '''
+        回退选择行为选项的入口。<br>Entrance to reverting selection behavior option.
+        '''
+        if self.sequence.selection_count == 0:
+            print("当前状态已经是初始状态。\nThe current state is already the initial state.")
+        else:
+            revert_index_min: int = -self.sequence.selection_count
+            revert_index_max: int = self.sequence.selection_count - 1
+            print('''您想要回退到作出第几次选择“之后”的状态？\nTo which selection point (by index) would you like to revert — specifically, to the state *after* that selection was made?\n1. 输入空字符串以撤销最近一次选择行为。\n   Submit an empty string to redo the latest selection behavior.\n2. 输入%d到%d之间的非零整数来回退到以该整数为索引的选择界面之后的状态。\n   Enter a non-zero integer between %d and %d to return to the state following the selection at that index.\n3. 输入“0”以取消操作。\n   Enter "0" to cancel the operation.)\n警告：该操作是不可逆的！请谨慎选择回退状态。\nWarning: This operation isn't reversible! Please choose the selection to recall with caution.''' %(revert_index_min, revert_index_max, revert_index_min, revert_index_max))
             while True:
-                begIndex_str: str = input()
-                if begIndex_str == "":
-                    begIndex = 0
+                revert_index_str: str = input()
+                if revert_index_str == "":
+                    self.sequence.recall()
+                    print("已撤销最近一次选择。\nLatest selection has been undone.")
                     break
-                elif begIndex_str == "0":
-                    step -= 2
+                elif revert_index_str == "0":
                     break
                 else:
                     try:
-                        begIndex = int(begIndex_str)
+                        revert_index: int = int(revert_index_str)
                     except ValueError:
                         print("请输入一个整数。\nPlease input an integer.")
                     else:
-                        if begIndex >= -anvilSeq.snapshot_count and begIndex < anvilSeq.snapshot_count:
+                        if revert_index >= revert_index_min and revert_index <= revert_index_max:
+                            self.sequence.restore(-revert_index if revert_index < 0 else revert_index_max - revert_index)
+                            print("已撤回到第%d次选择后的状态。\nReverted to the status after selection No. %d." %(self.sequence.selection_count, self.sequence.selection_count))
                             break
                         else:
-                            print("下标越界。请重新输入。\nIndex out of bounds. Please try again.")
-        elif step == 4:
-            print("第四步：请选择视频分辨率。\nStep 4: Please select a resolution of the video.\n☆1\t1920 × 1080\n2\t2560 × 1440")
-            while True:
-                res_option: str = input()
-                if res_option == "":
-                    res_option = "1"
-                if res_option[0] == "0":
-                    step -= 2
-                    break
-                elif res_option[0] == "1":
-                    res = "1920x1080"
-                    break
-                elif res_option[0] == "2":
-                    res = "2560x1440"
-                    break
-                else:
-                    print("您的输入有误！请重新输入。\nERROR input! Please try again.")
-        elif step == 5:
-            break
+                            print("请输入%d到%d之间的非零整数。\nPlease input a non-zero integer between %d and %d." %(revert_index_min, revert_index_max, revert_index_min, revert_index_max))
+    
+    def copy_counter_PR_cli(self) -> int:
+        '''
+        将随机元素计数器复制到适用于Adobe Premiere Pro软件的剪贴板中的主函数。<br>The main function that copies random element counters into the clipboard for Adobe Premiere Pro software.
+        
+        :return: 状态码。<br>Status code.
+        
+            - 0: 复制完成。<br>Copy finished.
+            - 1: 剪贴板格式缺失。<br>Missing clipboard formats.
+        :rtype: int
+        '''
+        #检查剪贴板格式（Check clipboard formats）
+        missing_clipboard_formats: list[str] = [_ for _ in REQUIRED_CLIPBOARD_FORMATS_PR if not _ in clipboard_formats]
+        if len(missing_clipboard_formats) > 0:
+            print("剪贴板格式不符。请确保您在执行批量复制前已经复制了某个PR文本框中的一段文字。\nClipboard format mismatched. Please make sure you've copied some text in a PR textbox before you perform a bulk copy operation.")
+            print("当前系统剪贴板窗口缺失以下格式：\nThe following formats are missing from the current system clipboard window:")
+            # print(json.dumps(missing_clipboard_formats, ensure_ascii = False))
+            for missing_clipboard_format in missing_clipboard_formats:
+                print(f"- {missing_clipboard_format}")
+            print("请打开Adobe Premiere Pro软件，在一个序列中创建一个文本框，输入一些文字之后复制该文本框中的文字，再运行本程序。\nPlease open Adobe Premiere Pro software, create a text box in a sequence, input some text into it, then copy the text and finally restart this program.\n")
+            return 1
+        #设置参数（Set parameters）
+        step: int = 1 #步骤（Step）
+        mode: str = "cherry" #属性锻造器的模式。决定呈现哪些属性锻造器的数量（The mode that stat anvils belong to, which determines the number of which types of stat anvils will be displayed）
+        begIndex: int = 0 #复制和导出的起始快照的下标（The index of the snapshot to begin to copy and export）
+        res: str = "1920x1080" #视频分辨率，决定复制到Premiere Pro的文本框中的文本的字号和制表位排版（Video resolution, which determines the font size and typesetting regarding tabs of the text to be copied into a text box in Premiere Pro）
+        while True:
+            if step == 0:
+                break
+            elif step == 1:
+                print("第一步：请选择一个游戏模式。\nStep 1: Please select a game mode.\n1\t斗魂竞技场（Arena）\n☆2\t海克斯大乱斗（ARAM: Mayhem）")
+                while True:
+                    mode_option: str = input()
+                    if mode_option == "":
+                        mode_option = "2"
+                    if mode_option[0] == "0":
+                        step -= 2
+                        break
+                    elif mode_option[0] == "1":
+                        mode = "cherry"
+                        break
+                    elif mode_option[0] == "2":
+                        mode = "kiwi"
+                        break
+                    else:
+                        print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+            elif step == 2:
+                print("第二步：请设置开始复制和导出快照的序号。\nStep 2: Please set the index of the snapshot to start to copy and export.")
+                print("取值范围（Range）：[%d, %d]" %(-self.sequence.snapshot_count, self.sequence.snapshot_count - 1))
+                print('输入空字符串以从头开始。输入“0”以返回上一步。\nEnter nothing to start from the beginning. Submit "0" to return to the last step.')
+                while True:
+                    begIndex_str: str = input()
+                    if begIndex_str == "":
+                        begIndex = 0
+                        break
+                    elif begIndex_str == "0":
+                        step -= 2
+                        break
+                    else:
+                        try:
+                            begIndex = int(begIndex_str)
+                        except ValueError:
+                            print("请输入一个整数。\nPlease input an integer.")
+                        else:
+                            if begIndex >= -self.sequence.snapshot_count and begIndex < self.sequence.snapshot_count:
+                                break
+                            else:
+                                print("下标越界。请重新输入。\nIndex out of bounds. Please try again.")
+            elif step == 3:
+                print("第三步：请选择视频分辨率。\nStep 3: Please select a resolution of the video.\n☆1\t1920 × 1080\n2\t2560 × 1440")
+                while True:
+                    res_option: str = input()
+                    if res_option == "":
+                        res_option = "1"
+                    if res_option[0] == "0":
+                        step -= 2
+                        break
+                    elif res_option[0] == "1":
+                        res = "1920x1080"
+                        break
+                    elif res_option[0] == "2":
+                        res = "2560x1440"
+                        break
+                    else:
+                        print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+            elif step == 4:
+                break
+            else:
+                print("步骤异常。请联系开发人员修复程序。\nStep error. Please contact the developer to fix the program.")
+                break
+            step += 1
+        #逐时间点复制（Timewise copy）
+        if step == 4:
+            self.sequence.copy_counter_PR(begIndex = begIndex, mode = mode, res = res)
+        return 0
+    
+    def export_counter_table(self) -> str:
+        '''
+        将计数器序列导出为表格。<br>Export the counter sequence into a table.
+        
+        :return: 制表位分隔的计数器文本。<br>Tab-delimited counter text.
+        :rtype: str
+        '''
+        mode: str = "" #初始化游戏模式参数（Initialize the game mode parameter）
+        ready: bool = False #标记游戏模式参数是否准备就绪（Marks whether the game mode parameter is ready）
+        print("请选择一个游戏模式。\nPlease select a game mode.\n1\t斗魂竞技场（Arena）\n☆2\t海克斯大乱斗（ARAM: Mayhem）")
+        while True:
+            mode_option: str = input()
+            if mode_option == "":
+                mode_option = "2"
+            if mode_option[0] == "0":
+                break
+            elif mode_option[0] == "1":
+                mode = "cherry"
+                ready = True
+                break
+            elif mode_option[0] == "2":
+                mode = "kiwi"
+                ready = True
+                break
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+        if ready:
+            result: str = self.sequence.export_counter(mode = mode)
         else:
-            print("步骤异常。请联系开发人员修复程序。\nStep error. Please contact the developer to fix the program.")
-        step += 1
-    #逐时间点复制（Timewise copy）
-    if step == 5:
-        anvilSeq.copy_counter_PR(begIndex = begIndex, mode = mode, res = res)
-    return 0
+            result = ""
+        return result
+    
+    def export_main(self) -> None:
+        '''
+        导出选项的入口。<br>Entrance to export options.
+        '''
+        print("请选择一个导出选项：\nPlease select an export option:\n1\t选择行为序列 → 时间轴文本（Selection behavior sequence -> Timeline text）\n2\t计数器快照 → PR剪贴板（Counter snapshot -> PR clipboard）\n3\t计数器序列 → 表格（Counter sequence -> Table）")
+        while True:
+            option: str = input()
+            if option == "":
+                continue
+            elif option[0] == "0":
+                break
+            elif option[0] == "1":
+                result: str = self.sequence.export_timeline(useInternalName = self.useInternalName_export, useIntegerTier = self.useIntegerTier_export, locale = self.locale_export)
+                print(result)
+                if self.copyOnExport:
+                    pyperclip.copy(result)
+                    print("时间轴文本已复制到剪贴板。\nTimeline text has been copied to the clipboard.")
+            elif option[0] == "2":
+                self.copy_counter_PR_cli()
+            elif option[0] == "3":
+                result: str = self.export_counter_table()
+                if result != "":
+                    print(result)
+                    if self.copyOnExport:
+                        pyperclip.copy(result)
+                        print("计数器表格已复制到剪贴板。\nCounter table has been copied to the clipboard.")
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+                continue
+            print("请选择一个导出选项：\nPlease select an export option:\n1\t选择行为序列 → 时间轴文本（Selection behavior sequence -> Timeline text）\n2\t计数器快照 → PR剪贴板（Counter snapshot -> PR clipboard）\n3\t计数器序列 → 表格（Counter sequence -> Table）")
+    
+    def reset_sequence(self) -> None:
+        '''
+        清空用户当前正在操作的时间序列，包括清除所有计数器快照和清空选择行为。<br>Clear the sequence that user is currently working with, including clearing all counter snapshots and selection behaviors.
+        '''
+        if self.sequence.selection_count == 0:
+            print("当前状态已经是初始状态。\nThe current state is already the initial state.")
+        else:
+            print("警告：清空时间序列是不可逆的操作！是否继续？（输入任意非空字符串以确认清空时间序列，否则取消操作。）\nWarning: Clearing the sequence is an irrevisible operation! Do you really want to continue? (Submit any non-empty string to confirm clearing the sequence, or null to cancel the operation.)")
+            confirm: bool = bool(input())
+            if confirm:
+                self.sequence.reset()
+                print("已清空所有选择界面以及计数器快照。\nAll selection screens and counter snapshots have been cleared.")
+    
+    def sequence_main(self) -> None:
+        '''
+        时间序列操作的主函数。<br>The main function for sequence operations.
+        '''
+        print("请选择一个操作：\nPlease select an operation:\n-1\t设置（Settings）\n0\t退出程序（Exit the program）\n1\t添加选择行为（Add selections）\n%s2\t回退选择行为（Revert selections）\n3\t导出选择行为（Export selections）\n%s4\t重置序列（Reset sequence）\n5\t输出当前设置（Output current settings）" %("!" if self.sequence.selection_count == 0 else "", "!" if self.sequence.selection_count == 0 else ""))
+        while True:
+            operation: str = input()
+            if operation == "":
+                continue
+            elif operation[0] == "0":
+                break
+            elif operation == "-1":
+                self.settings_main()
+            elif operation[0] == "1":
+                self.add_selection_main()
+            elif operation[0] == "2":
+                self.revert_selection()
+            elif operation[0] == "3":
+                self.export_main()
+            elif operation[0] == "4":
+                self.reset_sequence()
+            elif operation[0] == "5":
+                self.summarize_settings()
+            else:
+                print("您的输入有误！请重新输入。\nERROR input! Please try again.")
+                continue
+            print("请选择一个操作：\nPlease select an operation:\n-1\t设置（Settings）\n0\t退出程序（Exit the program）\n1\t添加选择行为（Add selections）\n%s2\t回退选择行为（Revert selections）\n3\t导出选择行为（Export selections）\n%s4\t重置序列（Reset sequence）\n5\t输出当前设置（Output current settings）" %("!" if self.sequence.selection_count == 0 else "", "!" if self.sequence.selection_count == 0 else ""))
+
+def main() -> None:
+    '''
+    主函数，作为各个功能的入口。<br>Main function, as the entrance to each function.
+    '''
+    ui: SequenceCLI = SequenceCLI()
+    if ui.set_elementType(): #一定要在程序运行之初将`ui.sequence`初始化为一个子类的对象（`ui.sequence` must be initialized as an object of a sub-class at the very beginning of the program execution）
+        ui.summarize_settings() #在程序运行之初，输出所有设置项（At the beginning of the program execution, output all settings）
+        ui.sequence_main()
 
 def debug() -> None:
     '''
@@ -2471,7 +2950,7 @@ def debug() -> None:
     counter_table: str = anvilSeq.export_counter(mode = "kiwi")
     anvil_block: dict[str, dict[str, dict[str, Any]]] = anvilSeq.organize_anvil_data()
     print(json.dumps(anvil_block, indent = 4, ensure_ascii = False))
-    import pyperclip
+    input("按回车键复制属性锻造器选择序列时间轴文本。\nPress Enter to copy the stat anvil selection sequence timeline text.\n")
     pyperclip.copy(timeline_text_transform)
     input("按回车键复制属性锻造器选择序列数据。\nPress Enter to copy the stat anvil selection sequence data.\n")
     pyperclip.copy(json.dumps(anvilSeq.selections, indent = 4, ensure_ascii = False))

@@ -1,0 +1,4 @@
+#Vscode个人配置文件（Stores paths of Vscode setting files）
+.vscode/*
+#库缓存（Pycache）
+*__pycache__*
