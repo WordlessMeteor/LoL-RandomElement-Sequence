@@ -1122,9 +1122,9 @@ class StatAnvilSequence(LoLRandomElementSequence):
         pRecordEN: re.Pattern[str] = re.compile(sRecordEN)
         pRecord: re.Pattern[str] = pRecordZH if locale == "zh_CN" else pRecordEN
         #准备一些对应关系，用于规范用户输入的名称的大小写（Prepare some mappings to normalize the case of names from user input）
-        TIER_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.TIER_STRINGTABLE.items()} #从位阶的本地化文本到位阶代码的映射（The reflection from tier localized text to tier code）
-        ANVILSOURCE_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.ANVILSOURCE_STRINGTABLE.items()} #从属性锻造器来源本地化文本到来源主键的映射（The reflection from stat anvil source's localized text to source key）
-        ANVILTYPE_MATCH_MAP: dict[str, str] = {value[locale]: key for key, value in self.ANVILTYPE_STRINGTABLE.items()} #从属性锻造器类型本地化文本到类型代码的映射（The reflection from stat anvil type localized text to type code）
+        TIER_MATCH_MAP: dict[str, str] = {value[locale].lower(): key for key, value in self.TIER_STRINGTABLE.items()} #从位阶的本地化文本到位阶代码的映射（The reflection from tier localized text to tier code）
+        ANVILSOURCE_MATCH_MAP: dict[str, str] = {value[locale].lower(): key for key, value in self.ANVILSOURCE_STRINGTABLE.items()} #从属性锻造器来源本地化文本到来源主键的映射（The reflection from stat anvil source's localized text to source key）
+        ANVILTYPE_MATCH_MAP: dict[str, str] = {value[locale].lower(): key for key, value in self.ANVILTYPE_STRINGTABLE.items()} #从属性锻造器类型本地化文本到类型代码的映射（The reflection from stat anvil type localized text to type code）
         ##注意到此时`ANVILTYPE_MATCH_MAP`键中含有“固定法术穿透碎片”和“百分比法术穿透碎片”两个键。这样的话，当用户输入这两个字符串作为属性锻造器的名称时，程序可以正确地将其转化为相应的锻造器代码（Note that here "Fixed Magic Penetration Shard" and "Percentage Magic Penetration Shard" exist in `ANVILTYPE_MATCH_MAP`. In that case, when the user inputs these two strings as the stat anvil's name, the program can correctly transform it into the correponding anvilId）
         #判断属性锻造器标识合法性（Judge the validity of the stat anvil identifier）
         def isValidAnvilTier(anvil_tier: str) -> bool:
@@ -1136,7 +1136,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的来源的有效性。<br>Validity of the stat anvil's source.
             :rtype: bool
             '''
-            return useInternalName and (anvil_tier.isdigit() and int(anvil_tier) in self.VALID_TIERS_INT or anvil_tier.lower() in self.TIER_CASE_MAP) or not useInternalName and anvil_tier in TIER_MATCH_MAP
+            return useInternalName and (anvil_tier.isdigit() and int(anvil_tier) in self.VALID_TIERS_INT or anvil_tier.lower() in self.TIER_CASE_MAP) or not useInternalName and anvil_tier.lower() in TIER_MATCH_MAP
         
         def isValidAnvilSource(anvil_source: str) -> bool:
             '''
@@ -1147,7 +1147,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的来源的有效性。<br>Validity of the stat anvil's source.
             :rtype: bool
             '''
-            return useInternalName and anvil_source.lower() in self.ANVILSOURCE_CASE_MAP or not useInternalName and anvil_source in ANVILSOURCE_MATCH_MAP
+            return useInternalName and anvil_source.lower() in self.ANVILSOURCE_CASE_MAP or not useInternalName and anvil_source.lower() in ANVILSOURCE_MATCH_MAP
         
         def isValidAnvilName(anvil_name: str) -> bool:
             '''
@@ -1158,7 +1158,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
             :return: 属性锻造器的名称的有效性。<br>Validity of the stat anvil's name.
             :rtype: bool
             '''
-            return useInternalName and (anvil_name == "MRP" or anvil_name.lower() in self.ANVILTYPE_CASE_MAP) or not useInternalName and (anvil_name in ANVILTYPE_MATCH_MAP or locale == "en_US" and anvil_name == "Magic Penetration Shard" or locale == "zh_CN" and anvil_name == "法术穿透碎片") #固定法术穿透碎片和百分比法术穿透碎片的名字都是“法术穿透碎片”。必须要处理这一个特例（Both Fixed Magic Penetration Shard and Percentage Magic Penetration Shard use the name "Magic Penetration Shard". This special case must be discussed individually）
+            return useInternalName and (anvil_name == "MRP" or anvil_name.lower() in self.ANVILTYPE_CASE_MAP) or not useInternalName and (anvil_name.lower() in ANVILTYPE_MATCH_MAP or locale == "en_US" and anvil_name == "Magic Penetration Shard" or locale == "zh_CN" and anvil_name == "法术穿透碎片") #固定法术穿透碎片和百分比法术穿透碎片的名字都是“法术穿透碎片”。必须要处理这一个特例（Both Fixed Magic Penetration Shard and Percentage Magic Penetration Shard use the name "Magic Penetration Shard". This special case must be discussed individually）
         #词法分析（Parse）
         selections: list[Selection] = []
         recordLines: list[str] = timeline_text.splitlines()
@@ -1180,7 +1180,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                         else:
                             tier = self.TIER_CASE_MAP[rarity.lower()]
                     else:
-                        tier = TIER_MATCH_MAP[rarity]
+                        tier = TIER_MATCH_MAP[rarity.lower()]
                     #选项（Options）
                     options_supply: list[Option] = []
                     options_select: list[Option] = []
@@ -1195,7 +1195,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                             if anvil_name in {"法术穿透碎片", "Magic Penetration Shard"}:
                                 anvil_id = "MRPP" if tier == "Prismatic" else "MRPF"
                             else:
-                                anvil_id = ANVILTYPE_MATCH_MAP[anvil_name]
+                                anvil_id = ANVILTYPE_MATCH_MAP[anvil_name.lower()]
                         option_supply: Option = {"id": anvil_id}
                         option_select: Option = {"id": anvil_id}
                         #已选择状态（Picked status）
@@ -1212,7 +1212,7 @@ class StatAnvilSequence(LoLRandomElementSequence):
                     if useInternalName:
                         sourceKey: str = self.ANVILSOURCE_CASE_MAP[source.lower()]
                     else:
-                        sourceKey = ANVILSOURCE_MATCH_MAP[source]
+                        sourceKey = ANVILSOURCE_MATCH_MAP[source.lower()]
                     #赋值（Assignment）
                     selection_supply: Selection = {
                         "action": "supply",
